@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/Users/Berthold/.android/build-cache/8369cf100ab46dd0d9e478c995ff27a3d55eb8a4/output/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]

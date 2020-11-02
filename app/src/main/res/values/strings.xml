@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">BeamCalc</string>
+
+    <!-- Main -->
+
+    <!-- Options menu -->
+    <string name="manu_save_drawing_as_bitmap">Zeichnung speichern.</string>
+    <string name="menu_app_info">Info....</string>
+
+    <!-- Beam descritpion -->
+    <string name="beam_definition_title_bar">Träger:</string>
+    <string name="beam_length_hint">Länge [m]</string>
+    <string name="beam_left_support_hint">1. Auflager von links [m] </string>
+    <string name="beam_right_support_hint">2. Auflager von links [m] </string>
+    <string name="leave_warning">Wenn Sie den Back- Button ein zweites mal drücken, wird die App verlassen. Der aktuelle Status wird gespeichert.</string>
+    <string name="state_saved">Eingaben wurden gespeichert.</string>
+    <string name="beam_load_force_hint">[N] oder [N/m]</string>
+
+    <!-- Load description -->
+    <string name="beam_load_title_bar">Belastung:</string>
+    <string name="beam_load_position_from_left_hint">Auflager links [m]</string>
+    <string name="beam_load_length_hint">[N] oder [N/m]</string>
+
+    <!-- Checkboxes -->
+    <string name="check_show_result">Ergebnis</string>
+    <string name="check_show_dimensions">Mase</string>
+    <string name="check_show_math_term">Lös</string>
+
+    <!-- Beam load list titel bar -->
+    <string name="beam_load_list_titelbar">Belastungs Tabelle</string>
+
+    <!-- Show result -->
+    <string name="error_message">Fehler, bitte die Eingabe prüfen</string>
+
+    <!-- Save drawing of result -->
+    <string name="save_drawing_as_bitmap">Als \'*.png\' speichern</string>
+    <string name="drawing_was_saved">Zeichnung wurde gespeichert.</string>
+
+
+    <!-- Fragment yes/ no dialog -->
+    <string name="save_dialog">Speichern?</string>
+    <string name="hint_file_dialog">Datei Name</string>
+    <string name="confirm_dialog_overwrite">Möchten Sie die folgende Datei überschreiben?</string>
+    <string name="confirm_dialog_save_at">Möchten Sie die Zeichnung hier speichern:</string>
+    <string name="confirm_dialog_name_already_exists">Die Datei gibt es schon. Möchten Sie diese Datei überschreiben?</string>
+    <string name="confirm_overwrite">Datei ersetzen</string>
+    <string name="confirm_save_at">Datei speichern</string>
+    <string name="cancel_save">Nicht speichern</string>
+
+
+</resources>

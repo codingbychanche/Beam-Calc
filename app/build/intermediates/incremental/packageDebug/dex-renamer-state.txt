@@ -1,0 +1,4 @@
+#Sun Jul 07 19:32:18 CEST 2019
+base.0=/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

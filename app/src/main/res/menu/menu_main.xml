@@ -1,0 +1,26 @@
+<!--
+  ~ menu_main.xml
+  ~
+  ~ Created by Berthold Fritz
+  ~
+  ~ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License:
+  ~ https://creativecommons.org/licenses/by-nc-sa/4.0/
+  ~
+  ~ Last modified 2/19/19 5:21 PM
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="berthold.beamcalc.MainActivity">
+    <item
+        android:id="@+id/shwo_app_info"
+        android:orderInCategory="100"
+        android:title="@string/menu_app_info"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/save_drawing_as_bitmap"
+        android:title="@string/manu_save_drawing_as_bitmap"
+        app:showAsAction="never">
+    </item>
+</menu>

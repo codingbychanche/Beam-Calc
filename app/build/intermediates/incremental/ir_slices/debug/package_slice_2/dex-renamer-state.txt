@@ -1,0 +1,4 @@
+#Tue Aug 13 21:24:40 CEST 2019
+base.0=/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/build/intermediates/transforms/dexMerger/debug/2
+path.0=classes.dex
+renamed.0=classes.dex
