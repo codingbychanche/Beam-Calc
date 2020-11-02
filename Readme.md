@@ -6,5 +6,4 @@ You can get the Android app here:
 
 ![](Shot_2.jpg)
 
-![](Land_Tab.png)
 
