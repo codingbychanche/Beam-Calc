@@ -1,68 +1,68 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="berthold.beamcalc"
-4    android:versionCode="1"
+4    android:versionCode="2"
 5    android:versionName="1.2B" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="22"
-8-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml
+8-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml
+9-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
 10
 11    <!-- Permissions -->
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:6:5-80
-12-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:6:22-77
+12-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:6:5-80
+12-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:6:22-77
 13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:7:5-81
-13-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:7:22-78
+13-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:7:5-81
+13-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:7:22-78
 14
 15    <!-- Activity's -->
 16    <application
-16-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:10:5-29:19
+16-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:10:5-29:19
 17        android:allowBackup="true"
-17-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:11:9-35
+17-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:11:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
+18-->[androidx.core:core:1.1.0] /home/kuepele/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:icon="@mipmap/icon"
-20-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:12:9-36
+20-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:12:9-36
 21        android:label="@string/app_name"
-21-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:13:9-41
+21-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:13:9-41
 22        android:supportsRtl="true"
-22-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:14:9-35
+22-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:14:9-35
 23        android:testOnly="true"
 24        android:theme="@style/AppTheme" >
-24-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:15:9-40
+24-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:15:9-40
 25        <activity
-25-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:16:9-25:20
+25-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:16:9-25:20
 26            android:name="berthold.beamcalc.MainActivity"
-26-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:17:13-41
+26-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:17:13-41
 27            android:label="@string/app_name"
-27-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:18:13-45
+27-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:18:13-45
 28            android:theme="@style/AppTheme.NoActionBar" >
-28-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:19:13-56
+28-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:19:13-56
 29            <intent-filter>
-29-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:20:13-24:29
+29-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:20:13-24:29
 30                <action android:name="android.intent.action.MAIN" />
-30-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:21:17-69
-30-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:21:25-66
+30-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:21:17-69
+30-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:21:25-66
 31
 32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:23:17-77
-32-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:23:27-74
+32-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:23:17-77
+32-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:23:27-74
 33            </intent-filter>
 34        </activity>
 35        <activity android:name="berthold.beamcalc.SaveBeamDrawing" />
-35-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:26:9-53
-35-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:26:19-50
+35-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:26:9-53
+35-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:26:19-50
 36        <activity android:name="berthold.filedialogtool.FileDialog" />
-36-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:27:9-71
-36-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:27:19-68
+36-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:27:9-71
+36-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:27:19-68
 37        <activity android:name="berthold.beamcalc.InfoActivity" />
-37-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:28:9-59
-37-->/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/src/main/AndroidManifest.xml:28:19-47
+37-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:9-59
+37-->/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:19-47
 38    </application>
 39
 40</manifest>
