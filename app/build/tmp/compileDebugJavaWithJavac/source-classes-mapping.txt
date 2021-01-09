@@ -12,6 +12,13 @@ berthold/beamcalc/BuildConfig.java
 berthold/beamcalc/SaveBeamDrawing.java
  berthold.beamcalc.SaveBeamDrawing
  berthold.beamcalc.SaveBeamDrawing$1
+berthold/beamcalc/FragmentCustomDialogYesNo.java
+ berthold.beamcalc.FragmentCustomDialogYesNo
+ berthold.beamcalc.FragmentCustomDialogYesNo$1
+ berthold.beamcalc.FragmentCustomDialogYesNo$2
+ berthold.beamcalc.FragmentCustomDialogYesNo$getDataFromFragment
+berthold/beamcalc/MyBitmapTools.java
+ berthold.beamcalc.MyBitmapTools
 berthold/beamcalc/MainActivity.java
  berthold.beamcalc.MainActivity
  berthold.beamcalc.MainActivity$1
@@ -22,13 +29,6 @@ berthold/beamcalc/MainActivity.java
  berthold.beamcalc.MainActivity$6
  berthold.beamcalc.MainActivity$7
  berthold.beamcalc.MainActivity$8
-berthold/beamcalc/MyBitmapTools.java
- berthold.beamcalc.MyBitmapTools
-berthold/beamcalc/FragmentCustomDialogYesNo.java
- berthold.beamcalc.FragmentCustomDialogYesNo
- berthold.beamcalc.FragmentCustomDialogYesNo$1
- berthold.beamcalc.FragmentCustomDialogYesNo$2
- berthold.beamcalc.FragmentCustomDialogYesNo$getDataFromFragment
 berthold/beamcalc/InfoActivity.java
  berthold.beamcalc.InfoActivity
  berthold.beamcalc.InfoActivity$1

@@ -21,7 +21,7 @@
   ~ Last modified 3/18/19 8:00 AM
   -->
 
-<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
@@ -30,16 +30,31 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="berthold.beamcalc.InfoActivity">
 
+    <TextView
+        android:id="@+id/version_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="VERSION"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
     <WebView
         android:id="@+id/browser"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </WebView>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version_tag"
+        app:layout_constraintTop_toBottomOf="@+id/version_tag"></WebView>
+
     <ProgressBar
         android:id="@+id/html_load_progress"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version_tag"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

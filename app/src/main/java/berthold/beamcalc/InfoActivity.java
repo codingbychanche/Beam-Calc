@@ -1,22 +1,7 @@
 package berthold.beamcalc;
 
-/*
- * InfoActivity.java
- *
- * Created by Berthold Fritz
- *
- * This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License:
- * https://creativecommons.org/licenses/by-nc-sa/4.0/
- *
- * Last modified 8/31/19 7:51 PM
- */
-
-
-/**
- * Shows app info...
- *
- */
-
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,12 +9,17 @@ import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Locale;
 
+/**
+ * Shows app info...
+ *
+ */
 public class InfoActivity extends AppCompatActivity {
 
     // Info
@@ -50,6 +40,8 @@ public class InfoActivity extends AppCompatActivity {
 
         // UI
         final Handler handler=new Handler();
+        final TextView versionNameTagView;
+        versionNameTagView=(TextView)findViewById(R.id.version_tag);
         webView=(WebView)findViewById(R.id.browser);
         progress=(ProgressBar)findViewById(R.id.html_load_progress);
 
@@ -57,6 +49,17 @@ public class InfoActivity extends AppCompatActivity {
         //final Locale current=getResources().getConfiguration().locale;
         final String  current=getResources().getConfiguration().locale.getLanguage();
         Log.v("LOCALE","Country:"+current);
+
+        // @rem: Shows how to retrieve the version- name tag from the 'build.gradle'- file@@
+        try {
+            PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+            String version = pInfo.versionName;
+            versionNameTagView.setText("Version:"+version);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            versionNameTagView.setText("-");
+        }
+        //@@
 
         // Load html...
         progress.setVisibility(View.VISIBLE);
@@ -68,7 +71,6 @@ public class InfoActivity extends AppCompatActivity {
                     htmlSite=new StringBuilder();
 
                     // @rem:Shows how to load data from androids 'assests'- folder@@
-
                     if (current.equals("de") || current.equals("en")) {
                         if (current.equals("de"))
                             bufferedReader = new BufferedReader(new InputStreamReader(getAssets().open("beamCalcInfoFile-de.html")));

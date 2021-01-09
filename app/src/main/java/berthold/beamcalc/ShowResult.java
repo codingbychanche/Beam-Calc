@@ -1,11 +1,4 @@
 package berthold.beamcalc;
-/**
- * Show Result
- * <p>
- * Draws result and returns a bitmap of it.
- * <p>
- * Created by Berthold on 1/21/19.
- */
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -20,6 +13,13 @@ import java.util.List;
 
 import org.berthold.beamCalc.*;
 
+/**
+ * Show Result
+ * <p>
+ * Draws result and returns a bitmap of it.
+ * <p>
+ * Created by Berthold on 1/21/19.
+ */
 public class ShowResult {
 
     // That is the size of the bitmap we use to draw our beam and the result
@@ -38,22 +38,23 @@ public class ShowResult {
     // This determines the actual length of the beam in pixel and it's
     // horizontal and vertical pos. on canvas.
     private static final int PADDING_X = 200;
-    private static final int PADDING_Y = 50;
+    private static final int PADDING_Y = 80;
 
     // Number format
     private static String floatNumberFormatPreset = "%.2f";
 
     // Drawing parameters
     private static final int RESULTING_FORCE_TEXT_X_OFFSET = 20;
-    private static final int RESULTUNG_FORCE_TEXT_Y_OFFSET = 100;
+    private static final int RESULTING_FORCE_TEXT_Y_OFFSET = 100;
 
     private static final int ACTING_FORCE_TEXT_X_OFFSET = 5;
-    private static final int ACTING_FORCE_TEXT_Y_OFFSET = -25;
+    private static final int ACTING_FORCE_TEXT_Y_OFFSET = -40;
 
     private static final int DIMENSION_TEXT_XOFFSET = 20; // If dimension text is wider than space between marks...
     private static final int DIMENSION_TEXT_YOFFSET = -20;
 
     // Parameters for text output
+    private static final float TEXT_SIZE = 35F;
     private static final int TEXT_VERTICAL_SPACING = 10;
 
     // parameters for layout of beam drawing and drawing of math term with solution
@@ -81,10 +82,9 @@ public class ShowResult {
      * Beam is drawn centered on canvas.
      *
      * @param result,beam,displayResult,resources
-     * @return bitmapWithResult        Bitmap containing either an error- message or the result.
+     * @return Bitmap containing either an error- message or the result.
      * @see BeamResult,Beam
      */
-
     public static Bitmap draw(BeamResult result, Beam beam, boolean displayResult, boolean displayDimensions, boolean displayMathTermWithSolution, Resources resources) {
 
         // Init
@@ -106,13 +106,17 @@ public class ShowResult {
     }
 
     /**
-     * Error description...
+     * Draw description of error.
+     *
+     * @param bitmap
+     * @param result
+     * @param resources
+     * @return Bitpmap with discription of error.
      */
-
     private static Bitmap drawError(Bitmap bitmap, BeamResult result, Resources resources) {
         Canvas canvas = new Canvas(bitmap);
         Paint paint = new Paint();
-        paint.setTextSize(30F);
+        paint.setTextSize(TEXT_SIZE);
         paint.setColor(Color.RED);
 
         float textX = 20;
@@ -135,17 +139,21 @@ public class ShowResult {
     }
 
     /**
-     * Draw result.
-     * <p>
-     * Draws all loads and the resulting forces at left and right support.
+     * Draws the solution.
+     *
+     * @param bitmap
+     * @param beam
+     * @param result
+     * @param displayResult
+     * @param resources
+     * @return Bitmap containing an image of the solution.
      */
-
     private static Bitmap drawBeamAndResult(Bitmap bitmap, Beam beam, BeamResult result, boolean displayResult, Resources resources) {
         Canvas canvas = new Canvas(bitmap);
 
         Paint paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setTextSize(25F);
+        paint.setTextSize(TEXT_SIZE);
         paint.setAlpha(Color.BLACK);
 
         // Init
@@ -233,9 +241,9 @@ public class ShowResult {
         canvas.drawBitmap(bitmap, 0, 0, paint);
         paint.setColor(Color.BLUE);
 
-        String nameOfSupport=beam.getBearing(0).getNameOfBearing();
+        String nameOfSupport = beam.getBearing(0).getNameOfBearing();
         if (displayResult)
-            canvas.drawText(nameOfSupport+"="+String.format(floatNumberFormatPreset, result.getResultingForceAtLeftBearing_N()) + " N", x0 + x1, y0 + RESULTUNG_FORCE_TEXT_Y_OFFSET, paint);
+            canvas.drawText(nameOfSupport + "=" + String.format(floatNumberFormatPreset, result.getResultingForceAtLeftBearing_N()) + " N", x0 + x1, y0 + RESULTING_FORCE_TEXT_Y_OFFSET, paint);
 
         // Draw right support
         l = beam.getBearing(1).getDistanceFromLeftEndOfBeam_m();
@@ -246,9 +254,9 @@ public class ShowResult {
         bitmap = MyBitmapTools.drawTransparentBitmap(bitmap, msupport, Color.WHITE, x0 + x2 - SUPPORT_CENTER_X, y0 + SUPPORT_VERTICAL_DIST_FROM_BEAM);
         canvas.drawBitmap(bitmap, 0, 0, paint);
 
-        nameOfSupport=beam.getBearing(1).getNameOfBearing();
+        nameOfSupport = beam.getBearing(1).getNameOfBearing();
         if (displayResult)
-            canvas.drawText(nameOfSupport+"="+String.format(floatNumberFormatPreset, result.getResultingForceAtRightBearing_N()) + " N", x0 + x2 - RESULTING_FORCE_TEXT_X_OFFSET, y0 + RESULTUNG_FORCE_TEXT_Y_OFFSET, paint);
+            canvas.drawText(nameOfSupport + "=" + String.format(floatNumberFormatPreset, result.getResultingForceAtRightBearing_N()) + " N", x0 + x2 - RESULTING_FORCE_TEXT_X_OFFSET, y0 + RESULTING_FORCE_TEXT_Y_OFFSET, paint);
 
         // Draw beam
         paint.setColor(Color.BLACK);
@@ -260,13 +268,13 @@ public class ShowResult {
     }
 
     /**
-     * Draw dimensions
-     * <p>
-     * Adds length of beam, shows distances between supports and loads.
-     *
-     * @param bitmapOfResult Drawing of solved beam to add dimensions to.
+     * Adds dimension to the image containing the solution.
+     * @param bitmapOfResult
+     * @param beam
+     * @param result
+     * @param resources
+     * @return Bitmap passed, with dimensions added.
      */
-
     public static Bitmap addDimensionsOfBeam(Bitmap bitmapOfResult, Beam beam, BeamResult result, Resources resources) {
 
         // Init
@@ -276,7 +284,7 @@ public class ShowResult {
 
         Paint paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setTextSize(25F);
+        paint.setTextSize(TEXT_SIZE);
         paint.setAlpha(Color.WHITE);
 
         // Sort loads by distance from left end in asc. order....
@@ -419,7 +427,6 @@ public class ShowResult {
         //
         // Mark all line loads
         //
-
         if (beam.getNumberOfLineLoads() > 0) {
             distanceOfLastLoadFromLeftEndIn_m = 0;
 
@@ -470,7 +477,6 @@ public class ShowResult {
                 }
             }
         }
-
         // That's it....
         return bitmapOfResultWithDimensionsOfBeam;
     }
@@ -482,7 +488,7 @@ public class ShowResult {
      * @param bitmapOfResult
      * @param beam
      * @param result
-     * @return
+     * @return Bitmap with solution, mathematical term wit detailed solution added.
      */
     private static Bitmap addMathTermWithSolution(Bitmap bitmapOfResult, Beam beam, BeamResult result, boolean displayDimensions, int layout, Resources resources) {
 
@@ -490,7 +496,7 @@ public class ShowResult {
 
         Paint paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setTextSize(25F);
+        paint.setTextSize(TEXT_SIZE);
         paint.setAlpha(Color.WHITE);
 
         // Get mathematical term's
@@ -498,8 +504,8 @@ public class ShowResult {
         String termForRightBearing = result.getSolutionTermForRightBearing();
 
         // Dimensions of bitmap of the result (bram drawing, with or without the dimensions
-        float bitmapOfResultWidth=bitmapOfResult.getWidth();
-        float bitmapOfResultHeight=bitmapOfResult.getHeight();
+        float bitmapOfResultWidth = bitmapOfResult.getWidth();
+        float bitmapOfResultHeight = bitmapOfResult.getHeight();
 
         // High and width of bitmap needed for text output of term with math solution.
         float textHightInPixelsLeftAndRightBearing = getTextHeightInPixels(termForLeftBearing, paint);
@@ -543,18 +549,19 @@ public class ShowResult {
                 if (displayDimensions) {
                     highForTermWittMathSolution = 2 * textHightInPixelsLeftAndRightBearing + TEXT_VERTICAL_SPACING + MIN_PADDING_FROM_ANY_BORDER + CANVAS_SIZE_Y + CANVAS_SIZE_ADDED_FOR_DIMENSIONS;
                     verticalPositionOfText = CANVAS_SIZE_Y + TEXT_VERTICAL_SPACING + CANVAS_SIZE_ADDED_FOR_DIMENSIONS + MIN_PADDING_FROM_ANY_BORDER;
-                }else {
+                } else {
                     highForTermWittMathSolution = 2 * textHightInPixelsLeftAndRightBearing + TEXT_VERTICAL_SPACING + MIN_PADDING_FROM_ANY_BORDER + CANVAS_SIZE_Y;
                     verticalPositionOfText = CANVAS_SIZE_Y + TEXT_VERTICAL_SPACING + MIN_PADDING_FROM_ANY_BORDER;
                 }
 
-                // Check if max width of term is bigger or smaller than the drawing of the beam
+                // Check if max width of term is bigger or smaller than the drawing of the beam.
+                // Set width of bitmap containing both, accordingly.
                 float widthOfBitmapWithMathTerm;
 
-                if (bitmapOfResultWidth>=widthForTerm)
-                    widthOfBitmapWithMathTerm=bitmapOfResultWidth;
+                if (bitmapOfResultWidth >= widthForTerm)
+                    widthOfBitmapWithMathTerm = bitmapOfResultWidth;
                 else
-                    widthOfBitmapWithMathTerm=widthForTerm;
+                    widthOfBitmapWithMathTerm = widthForTerm;
 
                 // Create bitmap
                 bitmapOfResultWithMathSolutionTerm = Bitmap.createBitmap((int) widthOfBitmapWithMathTerm, (int) highForTermWittMathSolution, Bitmap.Config.ARGB_8888);
@@ -580,7 +587,6 @@ public class ShowResult {
     /*
      * Collection of formulas...
      */
-
     private static int getBeamLengthInPixels(int canvasSizeX, int paddingX) {
         return canvasSizeX - paddingX;
     }

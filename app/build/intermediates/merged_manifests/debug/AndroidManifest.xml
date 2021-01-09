@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="berthold.beamcalc"
     android:versionCode="2"
-    android:versionName="1.2B" >
+    android:versionName="1.3" >
 
     <uses-sdk
         android:minSdkVersion="22"

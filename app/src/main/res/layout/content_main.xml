@@ -11,6 +11,7 @@
 
     <RelativeLayout
         android:orientation="horizontal"
+        android:background="@color/listRowBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -165,6 +166,7 @@
             <ImageButton
                 android:id="@+id/add_load"
                 android:src="@android:drawable/ic_menu_add"
+                android:background="#ffffff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>

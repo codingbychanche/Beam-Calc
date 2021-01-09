@@ -32,6 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.berthold.beamCalc.*;
+import org.w3c.dom.Text;
 
 
 public class BeamLoadListAdapter extends RecyclerView.Adapter<BeamLoadListAdapter.MyViewHolder> {
@@ -74,7 +75,10 @@ public class BeamLoadListAdapter extends RecyclerView.Adapter<BeamLoadListAdapte
         // - replace the contents of the view with that element
         Log.v("onBindViewHolder",loadList.get(position).toString());
 
-        TextView tv=(TextView)holder.mView.findViewById(R.id.my_text_View);
+        TextView forceNameView=(TextView)holder.mView.findViewById(R.id.force_name);
+        TextView forceView=(TextView)holder.mView.findViewById(R.id.force);
+        TextView forceDistanceFromLeftEndView=(TextView)holder.mView.findViewById(R.id.force_x0);
+        TextView forceLengthView=(TextView)holder.mView.findViewById(R.id.force_length);
         final ImageButton deleteItem=(ImageButton)holder.mView.findViewById(R.id.delete_item);
         final CheckBox includeThisLoadIntoCalculation=(CheckBox)holder.mView.findViewById(R.id.include_this_load_in_calculation);
         final ImageView loadHasErrors=(ImageView)holder.mView.findViewById(R.id.load_row_with_errors);
@@ -111,9 +115,16 @@ public class BeamLoadListAdapter extends RecyclerView.Adapter<BeamLoadListAdapte
         else
             unit="N/m";
 
-        tv.setText( nameOfLoad+"="+force_N+unit+"|"+
-                    "x"+position+"="+xn_m+" m |"+
-                    "l"+position+"="+lengthOfLineLoad_m_m+" m" );
+        forceNameView.setText(nameOfLoad);
+        //forceNameView.setText( nameOfLoad+"="+force_N+unit+"|"+
+        //            "x"+position+"="+xn_m+" m |"+
+        //            "l"+position+"="+lengthOfLineLoad_m_m+" m" );
+        forceView.setText(force_N+unit);
+        forceDistanceFromLeftEndView.setText("x"+position+"="+xn_m+" m");
+
+        if (lengthOfLineLoad_m_m>0)
+            forceLengthView.setText(lengthOfLineLoad_m_m+" m");
+
         if(includeLoad)
             includeThisLoadIntoCalculation.setChecked(true);
         else
