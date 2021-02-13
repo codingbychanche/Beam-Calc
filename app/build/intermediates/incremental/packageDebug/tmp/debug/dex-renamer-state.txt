@@ -1,7 +1,7 @@
-#Sat Jan 09 11:34:06 CET 2021
-base.0=/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+#Sat Feb 13 17:03:32 CET 2021
+base.0=/Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.1=/Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex

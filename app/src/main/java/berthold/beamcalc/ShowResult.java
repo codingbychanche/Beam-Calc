@@ -241,7 +241,7 @@ public class ShowResult {
         canvas.drawBitmap(bitmap, 0, 0, paint);
         paint.setColor(Color.BLUE);
 
-        String nameOfSupport = beam.getBearing(0).getNameOfBearing();
+        String nameOfSupport = beam.getBearing(0).getNameOfSupport();
         if (displayResult)
             canvas.drawText(nameOfSupport + "=" + String.format(floatNumberFormatPreset, result.getResultingForceAtLeftBearing_N()) + " N", x0 + x1, y0 + RESULTING_FORCE_TEXT_Y_OFFSET, paint);
 
@@ -254,7 +254,7 @@ public class ShowResult {
         bitmap = MyBitmapTools.drawTransparentBitmap(bitmap, msupport, Color.WHITE, x0 + x2 - SUPPORT_CENTER_X, y0 + SUPPORT_VERTICAL_DIST_FROM_BEAM);
         canvas.drawBitmap(bitmap, 0, 0, paint);
 
-        nameOfSupport = beam.getBearing(1).getNameOfBearing();
+        nameOfSupport = beam.getBearing(1).getNameOfSupport();
         if (displayResult)
             canvas.drawText(nameOfSupport + "=" + String.format(floatNumberFormatPreset, result.getResultingForceAtRightBearing_N()) + " N", x0 + x2 - RESULTING_FORCE_TEXT_X_OFFSET, y0 + RESULTING_FORCE_TEXT_Y_OFFSET, paint);
 

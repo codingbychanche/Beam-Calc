@@ -36,6 +36,17 @@
     <string name="save_drawing_as_bitmap">Als \'*.png\' speichern</string>
     <string name="drawing_was_saved">Zeichnung wurde gespeichert.</string>
 
+    <!-- Fragment add load -->
+    <string name="load_input_titel">Neue Last</string>
+    <string name="add_load_ok">Ok</string>
+    <string name="add_load_cancel">Nein</string>
+    <string name="load_magnitute_hint">F [N]</string>
+    <string name="load_length_hint">Länge [m]</string>
+    <string name="load_position_hint">Relativ zum linken Auflager [m]</string>
+    <string name="load_magnitute_text">F=</string>
+    <string name="load_position_text">x0=</string>
+    <string name="load_length_text">l=</string>
+
 
     <!-- Fragment yes/ no dialog -->
     <string name="save_dialog">Speichern?</string>

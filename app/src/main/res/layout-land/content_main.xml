@@ -46,6 +46,14 @@
         </ImageButton>
 
         <ImageButton
+            android:id="@+id/add_load"
+            android:layout_toRightOf="@+id/check_show_dimension"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add_load_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
             android:id="@+id/fold_unfold_data_area"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,59 +140,6 @@
 
             </LinearLayout>
 
-            <!-- Load input -->
-
-            <TextView
-                android:text="@string/beam_load_title_bar"
-                android:layout_width="match_parent"
-                android:inputType="numberSigned|numberDecimal"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:paddingLeft="10dp"
-                android:background="@color/lightGrey"
-                android:layout_height="wrap_content" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/load_force"
-                    android:hint="@string/beam_load_force_hint"
-                    android:inputType="numberSigned|numberDecimal"
-                    android:textSize="15dp"
-                    android:paddingLeft="10dp"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".5"/>
-
-                <EditText
-                    android:id="@+id/load_position_from_left"
-                    android:hint="@string/beam_load_position_from_left_hint"
-                    android:inputType="numberSigned|numberDecimal"
-                    android:textSize="15dp"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".5"/>
-
-                <EditText
-                    android:id="@+id/load_length"
-                    android:hint="@string/beam_load_length_hint"
-                    android:inputType="numberSigned|numberDecimal"
-                    android:textSize="15dp"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".5"/>
-
-                <ImageButton
-                    android:id="@+id/add_load"
-                    android:src="@android:drawable/ic_menu_add"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -199,7 +154,7 @@
                 android:id="@+id/beam_load_list"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight=".5"
+                android:layout_weight="2"
                 android:scrollbars="vertical">
             </androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>

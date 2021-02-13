@@ -21,9 +21,10 @@ public class ConvertLoadListObject {
     private static final int NAME_OF_LOAD = 0;
     private static final int FORCE_N = 1;
     private static final int DISTANCE_FROM_LEFT_END_m = 2;
-    private static final int LENGTH_OF_LINE_LOAD_m = 3;
-    private static final int INCLUDE_THIS_LOAD_INTO_CALCULATION = 4;
-    private static final int HAS_LOAD_AN_ERROR = 5;
+    private static final int ANGLE_OF_LOAD_IN_DEG=3;
+    private static final int LENGTH_OF_LINE_LOAD_m = 4;
+    private static final int INCLUDE_THIS_LOAD_INTO_CALCULATION = 5;
+    private static final int HAS_LOAD_AN_ERROR = 6;
 
     /**
      * Convert to String- Object.
@@ -43,6 +44,7 @@ public class ConvertLoadListObject {
             beamLoadListStringObject.append(load.getName() + ";" +
                     load.getForce_N() + ";" +
                     load.getDistanceFromLeftEndOfBeam_m() + ";" +
+                    load.getAngleOfLoad_degrees()+";"+
                     load.getLengthOfLineLoad_m() + ";" +
                     load.getIncludeThisLoadIntoCalculation() + ";" +
                     load.getError() + "#"
@@ -86,9 +88,10 @@ public class ConvertLoadListObject {
             Load load = new Load(columns[NAME_OF_LOAD],
                     Double.parseDouble(columns[FORCE_N]),
                     Double.parseDouble(columns[DISTANCE_FROM_LEFT_END_m]),
+                    Double.parseDouble(columns[ANGLE_OF_LOAD_IN_DEG]),
                     Double.parseDouble(columns[LENGTH_OF_LINE_LOAD_m]),
                     includeThisLoadIntoCalculation,
-                    loadHasAnError, 0);
+                    loadHasAnError);
 
             beamLoadListObject.add(load);
 

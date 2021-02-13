@@ -220,7 +220,6 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
      * Save file
      *
      */
-
     private void saveFile(String savePath)
     {
         try {

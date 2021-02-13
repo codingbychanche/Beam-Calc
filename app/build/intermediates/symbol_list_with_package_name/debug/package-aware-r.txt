@@ -1031,6 +1031,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add_load_icon
 drawable arrowdown
 drawable arrowup
 drawable avd_hide_password
@@ -1061,6 +1062,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24dp
 drawable icon
+drawable leading_signs
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1149,6 +1151,8 @@ id actions
 id activity_chooser_view_content
 id add
 id add_load
+id add_load_button_cancel
+id add_load_button_ok
 id alertTitle
 id all
 id always
@@ -1230,6 +1234,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id include_this_load_in_calculation
 id info
 id invisible
@@ -1244,9 +1249,12 @@ id line1
 id line3
 id listMode
 id list_item
-id load_force
 id load_length
-id load_position_from_left
+id load_length_text
+id load_magnitute
+id load_magnitute_text
+id load_position
+id load_position_text
 id load_row_with_errors
 id locksymbol
 id masked
@@ -1347,6 +1355,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1452,6 +1461,7 @@ layout design_text_input_password_icon
 layout file_list_active_entry
 layout fragment_custom_dialog_yes_no
 layout fragment_dialog_show_file_info
+layout fragment_load_input
 layout load_list_row
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1496,6 +1506,8 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string activity_name
+string add_load_cancel
+string add_load_ok
 string app_name
 string appbar_scrolling_view_behavior
 string beam_definition_title_bar
@@ -1526,6 +1538,13 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string hint_file_dialog
 string leave_warning
+string load_input_titel
+string load_length_hint
+string load_length_text
+string load_magnitute_hint
+string load_magnitute_text
+string load_position_hint
+string load_position_text
 string manu_save_drawing_as_bitmap
 string menu_app_info
 string mtrl_chip_close_icon_content_description
