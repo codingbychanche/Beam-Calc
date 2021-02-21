@@ -12,7 +12,7 @@
         android:id="@+id/shadow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
         android:background="@color/listRowBackground"
         android:elevation="-1dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,6 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:hint="xx.xx m"
             android:textSize="15dp"
             app:layout_constraintStart_toEndOf="@+id/force_x0"
             app:layout_constraintTop_toTopOf="@+id/force_x0" />

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/kuepele/Documents/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "/media/berthold/Bertholds Zeug/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/home/kuepele/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/res/values-port/values-port.xml",
+                    "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

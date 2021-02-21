@@ -40,4 +40,15 @@
     <string name="beam_load_force_hint">[N] or [N/m]</string>
     <string name="hint_file_dialog">Filename</string>
     <string name="save_dialog">Save?</string>
+
+    <!-- Fragment add load -->
+    <string name="add_load_ok">Add</string>
+    <string name="add_load_cancel">Cancel</string>
+    <string name="load_magnitute_hint">F [N]</string>
+    <string name="load_length_hint">Length [m]</string>
+    <string name="load_magnitute_text">F=</string>
+    <string name="load_position_text">x0=</string>
+    <string name="load_length_text">l=</string>
+    <string name="load_position_hint">From left support [m]</string>
+    <string name="load_input_titel">New Load</string>
 </resources>

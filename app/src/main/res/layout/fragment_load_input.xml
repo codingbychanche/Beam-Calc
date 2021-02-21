@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ fragment_load_input.xml
+  ~
+  ~ Created by Berthold Fritz
+  ~
+  ~ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License:
+  ~ https://creativecommons.org/licenses/by-nc-sa/4.0/
+  ~
+  ~ Last modified 1/16/21 9:51 AM
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/DialogBoxStyleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load_input_titel"
+        app:layout_constraintBottom_toBottomOf="@+id/add_load_button_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_load_button_cancel"></TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/leading_signs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_load_button_cancel"></ImageView>
+
+    <Button
+        android:id="@+id/add_load_button_ok"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_load_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_load_button_cancel"></Button>
+
+    <Button
+        android:id="@+id/add_load_button_cancel"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add_load_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/add_load_button_ok"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <TextView
+        android:id="@+id/load_magnitute_text"
+        style="@style/DialogBoxTextBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/load_magnitute_text"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+
+    <EditText
+        android:id="@+id/load_magnitute"
+        style="@style/DialogBoxTextBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/load_magnitute_hint"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/load_magnitute_text"
+        app:layout_constraintStart_toEndOf="@+id/load_magnitute_text"
+        app:layout_constraintTop_toTopOf="@+id/load_magnitute_text"></EditText>
+
+
+
+    <EditText
+        android:id="@+id/load_position"
+        style="@style/DialogBoxTextBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/load_length_hint"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/load_length_text"
+        app:layout_constraintStart_toEndOf="@+id/load_length_text"
+        app:layout_constraintTop_toTopOf="@+id/load_length_text"></EditText>
+
+    <TextView
+        android:id="@+id/load_length_text"
+        style="@style/DialogBoxTextBody"
+        android:text="@string/load_length_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/load_magnitute_text"
+        app:layout_constraintTop_toBottomOf="@+id/load_magnitute"></TextView>
+
+    <TextView
+        android:id="@+id/load_position_text"
+        style="@style/DialogBoxTextBody"
+        android:text="@string/load_position_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/load_length_text"
+        app:layout_constraintTop_toBottomOf="@+id/load_position"></TextView>
+
+    <EditText
+        android:id="@+id/load_length"
+        style="@style/DialogBoxTextBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/beam_load_position_from_left_hint"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/load_position_text"
+        app:layout_constraintStart_toEndOf="@+id/load_position_text"
+        app:layout_constraintTop_toTopOf="@+id/load_position_text"></EditText>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
