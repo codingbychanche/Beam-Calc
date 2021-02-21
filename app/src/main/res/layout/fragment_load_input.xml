@@ -25,18 +25,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/load_input_titel"
+<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="@+id/add_load_button_cancel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/add_load_button_cancel"></TextView>
+=======
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="8dp"
         android:src="@drawable/leading_signs"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_load_button_cancel"></ImageView>
+=======
+        android:src="@drawable/leading_signs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></ImageView>
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
     <Button
         android:id="@+id/add_load_button_ok"
@@ -44,19 +55,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_load_ok"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/add_load_button_cancel"></Button>
+=======
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></Button>
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
     <Button
         android:id="@+id/add_load_button_cancel"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="@string/add_load_cancel"
         app:layout_constraintEnd_toStartOf="@+id/add_load_button_ok"
         app:layout_constraintTop_toTopOf="parent"></Button>
+=======
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add_load_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add_load_button_ok"
+        app:layout_constraintTop_toBottomOf="@+id/load_position_text"></Button>
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
     <TextView
         android:id="@+id/load_magnitute_text"
@@ -73,6 +98,10 @@
         style="@style/DialogBoxTextBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+        android:layout_marginStart="24dp"
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
         android:hint="@string/load_magnitute_hint"
         android:inputType="numberSigned|numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/load_magnitute_text"
@@ -80,6 +109,7 @@
         app:layout_constraintTop_toTopOf="@+id/load_magnitute_text"></EditText>
 
 
+<<<<<<< HEAD
 
     <EditText
         android:id="@+id/load_position"
@@ -93,14 +123,23 @@
         app:layout_constraintTop_toTopOf="@+id/load_length_text"></EditText>
 
     <TextView
+=======
+    <EditText
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
         android:id="@+id/load_length_text"
         style="@style/DialogBoxTextBody"
         android:text="@string/load_length_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="@+id/load_magnitute_text"
         app:layout_constraintTop_toBottomOf="@+id/load_magnitute"></TextView>
+=======
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/load_position_text"
+        app:layout_constraintTop_toBottomOf="@+id/load_position_text" />
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
     <TextView
         android:id="@+id/load_position_text"
@@ -109,6 +148,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="@+id/load_length_text"
         app:layout_constraintTop_toBottomOf="@+id/load_position"></TextView>
 
@@ -123,6 +163,35 @@
         app:layout_constraintStart_toEndOf="@+id/load_position_text"
         app:layout_constraintTop_toTopOf="@+id/load_position_text"></EditText>
 
+=======
+        app:layout_constraintStart_toStartOf="@+id/load_magnitute_text"
+        app:layout_constraintTop_toBottomOf="@+id/load_magnitute"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/load_position"
+        style="@style/DialogBoxTextBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/load_position_hint"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/load_position_text"
+        app:layout_constraintStart_toStartOf="@+id/load_magnitute"
+        app:layout_constraintTop_toTopOf="@+id/load_position_text"
+        app:layout_constraintVertical_bias="0.523"></EditText>
+
+    <EditText
+        android:id="@+id/load_length"
+        style="@style/DialogBoxTextBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/load_length_hint"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/load_length_text"
+        app:layout_constraintStart_toStartOf="@+id/load_position"
+        app:layout_constraintTop_toTopOf="@+id/load_length_text"
+        app:layout_constraintVertical_bias="0.0"></EditText>
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

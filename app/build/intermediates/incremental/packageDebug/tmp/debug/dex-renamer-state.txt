@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 #Sun Feb 21 13:25:03 CET 2021
 base.0=/media/berthold/Bertholds Zeug/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+=======
+#Sat Feb 13 17:03:32 CET 2021
+base.0=/Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+<<<<<<< HEAD
 base.1=/media/berthold/Bertholds Zeug/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+=======
+base.1=/Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0

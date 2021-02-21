@@ -42,8 +42,13 @@
     <string name="save_dialog">Save?</string>
 
     <!-- Fragment add load -->
+<<<<<<< HEAD
     <string name="add_load_ok">Add</string>
     <string name="add_load_cancel">Cancel</string>
+=======
+    <string name="add_load_ok">Ok</string>
+    <string name="add_load_cancel">No</string>
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
     <string name="load_magnitute_hint">F [N]</string>
     <string name="load_length_hint">Length [m]</string>
     <string name="load_magnitute_text">F=</string>

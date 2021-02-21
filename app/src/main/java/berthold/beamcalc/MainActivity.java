@@ -272,7 +272,11 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
      * Rename load's
      * <p>
      * When a load was deleted, this method should be called in order
+<<<<<<< HEAD
      * to reassign the load name indices in the right order.
+=======
+     * to reassign the load name indices.
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
      * <p>
      * See: {@link #beamLoadListData}
      */
@@ -322,11 +326,16 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
      * @param loadLength
      */
     @Override
+<<<<<<< HEAD
     public void getLoadInputDialogData(String buttonPressed, String loadMagnitute, String loadLength, String loadPosition) {
+=======
+    public void getDialogInput(String buttonPressed, String loadMagnitute, String loadLength, String loadPosition) {
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
         if (buttonPressed.equals(FragmentLoadInput.BUTTON_OK_WAS_PRESSED)) {
             try {
                 Double force_N = Double.valueOf(loadMagnitute);
+<<<<<<< HEAD
                 Double positionFromLeftEnd_m = Double.valueOf(loadPosition);
                 Double angleOfLoad_DEG = 0.0; // This version only supports up or downwards acting single loads...
                 Double lengthOfLoad_m = Double.valueOf(loadLength);
@@ -334,12 +343,31 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
 
                 Load load = new Load(nameOfLoad, force_N, positionFromLeftEnd_m, angleOfLoad_DEG, lengthOfLoad_m, INCLUDE_THIS_LOAD_INTO_CALCULATION, LOAD_HAS_NO_ERROR);
                 Log.v(tag, "Name:"+nameOfLoad+"  Force:"+force_N+" X0:"+positionFromLeftEnd_m+" Angle:"+angleOfLoad_DEG+"  length:"+lengthOfLoad_m);
+=======
+                Double forceEnd_N=force_N;
+                Double x0_m = Double.valueOf(loadPosition);
+                Double angleOfLoad_DEG = 0.0;
+                Double fl_m = Double.valueOf(loadLength);
+                String nameOfLoad = buildNameOfLoad(fl_m, beamLoadListData.size());
+
+
+                // Load(String nameOfLoad, double forceStart_N, double distanceFromLeftEndOfBeam_m, double angleOfLoad_degrees,
+                // double lengthOfLineLoad_m, boolean includeThisLoadIntoCaclulation, boolean thisLoadHasAnError)
+                Load load = new Load(nameOfLoad, force_N, forceEnd_N, x0_m, angleOfLoad_DEG, fl_m, INCLUDE_THIS_LOAD_INTO_CALCULATION, LOAD_HAS_NO_ERROR);
+
+
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
                 beamLoadListData.add(load);
                 beamLoadListAdapter.notifyDataSetChanged();
                 renameLoads();
+<<<<<<< HEAD
 
                 solveBeamAndShowResult(beamLoadListData);
+=======
+                solveBeamAndShowResult(beamLoadListData);
+
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
             } catch (NumberFormatException e) {
                 Log.v(tag, "Could not convert");
             }
@@ -499,10 +527,17 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                 //String nameOfLoad=buildNameOfLoad(beamLoadListData.get(i),i);
                 //beamLoadListData.get(i).changeNameTo(nameOfLoad);
                 String nameOfLoad = beamLoadListData.get(i).getName();
+<<<<<<< HEAD
                 double force_N = beamLoadListData.get(i).getForce_N();
                 double distanceFromLeft_m = beamLoadListData.get(i).getDistanceFromLeftEndOfBeam_m();
                 double lengthOfLineLoad_m = beamLoadListData.get(i).getLengthOfLineLoad_m();
                 Load load = new Load(nameOfLoad, force_N, distanceFromLeft_m, 0, lengthOfLineLoad_m, INCLUDE_THIS_LOAD_INTO_CALCULATION, LOAD_HAS_NO_ERROR);
+=======
+                double force_F = beamLoadListData.get(i).getForce_N();
+                double distanceFromLeft_m = beamLoadListData.get(i).getDistanceFromLeftEndOfBeam_m();
+                double lengthOfLineLoad_m = beamLoadListData.get(i).getLengthOfLineLoad_m();
+                Load load = new Load(nameOfLoad, force_F, distanceFromLeft_m, 0, lengthOfLineLoad_m, INCLUDE_THIS_LOAD_INTO_CALCULATION, LOAD_HAS_NO_ERROR);
+>>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
                 beam.addLoad(load);
                 Log.v(tag+"CREATEBEAM", "Name:"+nameOfLoad+"  Force:"+force_N+" X0:"+distanceFromLeft_m+"  length:"+lengthOfLineLoad_m);
             }
