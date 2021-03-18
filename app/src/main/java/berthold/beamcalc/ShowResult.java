@@ -85,7 +85,7 @@ public class ShowResult {
      * @return Bitmap containing either an error- message or the result.
      * @see BeamResult,Beam
      */
-    public static Bitmap draw(BeamResult result, Beam beam, boolean displayResult, boolean displayDimensions, boolean displayMathTermWithSolution, Resources resources) {
+    public static Bitmap draw(BeamResult result, Beam beam, boolean displayResult, Resources resources) {
 
         // Init
         Bitmap bitmap = Bitmap.createBitmap(CANVAS_SIZE_X, CANVAS_SIZE_Y, Bitmap.Config.ARGB_8888);
@@ -94,10 +94,10 @@ public class ShowResult {
         Bitmap bitmapWithResult;
         if (result.getErrorCount() == 0) {
             bitmapWithResult = drawBeamAndResult(bitmap, beam, result, displayResult, resources);
-            if (displayDimensions)
-                bitmapWithResult = addDimensionsOfBeam(bitmapWithResult, beam, result, resources);
-            if (displayMathTermWithSolution)
-                bitmapWithResult = addMathTermWithSolution(bitmapWithResult, beam, result, displayDimensions, DRAW_BELOW_DRAWING, resources);
+            bitmapWithResult = addDimensionsOfBeam(bitmapWithResult, beam, result, resources);
+
+            if (displayResult)
+                bitmapWithResult = addMathTermWithSolution(bitmapWithResult, beam, result, DRAW_BELOW_DRAWING, resources);
 
         } else
             bitmapWithResult = drawError(bitmap, result, resources);
@@ -269,6 +269,7 @@ public class ShowResult {
 
     /**
      * Adds dimension to the image containing the solution.
+     *
      * @param bitmapOfResult
      * @param beam
      * @param result
@@ -490,7 +491,7 @@ public class ShowResult {
      * @param result
      * @return Bitmap with solution, mathematical term wit detailed solution added.
      */
-    private static Bitmap addMathTermWithSolution(Bitmap bitmapOfResult, Beam beam, BeamResult result, boolean displayDimensions, int layout, Resources resources) {
+    private static Bitmap addMathTermWithSolution(Bitmap bitmapOfResult, Beam beam, BeamResult result, int layout, Resources resources) {
 
         Bitmap bitmapOfResultWithMathSolutionTerm;
 
@@ -546,13 +547,10 @@ public class ShowResult {
                 float highForTermWittMathSolution;
                 float verticalPositionOfText;
 
-                if (displayDimensions) {
-                    highForTermWittMathSolution = 2 * textHightInPixelsLeftAndRightBearing + TEXT_VERTICAL_SPACING + MIN_PADDING_FROM_ANY_BORDER + CANVAS_SIZE_Y + CANVAS_SIZE_ADDED_FOR_DIMENSIONS;
-                    verticalPositionOfText = CANVAS_SIZE_Y + TEXT_VERTICAL_SPACING + CANVAS_SIZE_ADDED_FOR_DIMENSIONS + MIN_PADDING_FROM_ANY_BORDER;
-                } else {
-                    highForTermWittMathSolution = 2 * textHightInPixelsLeftAndRightBearing + TEXT_VERTICAL_SPACING + MIN_PADDING_FROM_ANY_BORDER + CANVAS_SIZE_Y;
-                    verticalPositionOfText = CANVAS_SIZE_Y + TEXT_VERTICAL_SPACING + MIN_PADDING_FROM_ANY_BORDER;
-                }
+
+                highForTermWittMathSolution = 2 * textHightInPixelsLeftAndRightBearing + TEXT_VERTICAL_SPACING + MIN_PADDING_FROM_ANY_BORDER + CANVAS_SIZE_Y + CANVAS_SIZE_ADDED_FOR_DIMENSIONS;
+                verticalPositionOfText = CANVAS_SIZE_Y + TEXT_VERTICAL_SPACING + CANVAS_SIZE_ADDED_FOR_DIMENSIONS + MIN_PADDING_FROM_ANY_BORDER;
+
 
                 // Check if max width of term is bigger or smaller than the drawing of the beam.
                 // Set width of bitmap containing both, accordingly.
@@ -580,7 +578,6 @@ public class ShowResult {
             default:
                 bitmapOfResultWithMathSolutionTerm = bitmapOfResult;
         }
-
         return bitmapOfResultWithMathSolutionTerm;
     }
 

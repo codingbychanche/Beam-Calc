@@ -38,13 +38,10 @@
 
     <!-- Fragment add load -->
     <string name="load_input_titel">Neue Last</string>
-<<<<<<< HEAD
     <string name="add_load_ok">+</string>
     <string name="add_load_cancel">Abbruch</string>
-=======
-    <string name="add_load_ok">Ok</string>
-    <string name="add_load_cancel">Nein</string>
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
+
+
     <string name="load_magnitute_hint">F [N]</string>
     <string name="load_length_hint">Länge [m]</string>
     <string name="load_position_hint">Relativ zum linken Auflager [m]</string>

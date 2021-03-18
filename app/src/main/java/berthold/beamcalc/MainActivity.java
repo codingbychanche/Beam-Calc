@@ -41,12 +41,11 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
     private String tag;
 
     // UI
-    private ImageButton checkShowResult, checkShowDimensions, checkShowDetailedSolution;
+    private ImageButton checkShowResult;
     private ImageButton loadAdd;
     private ImageButton foldUnfoldDataArea;
     private LinearLayout expandableDataRea;
     private EditText beamLengthIn_m, distanceOfLeftSupportFromLeftEndIn_m, distanceOfRightSupportFromLeftEndIn_m;
-    private EditText forceIn_N, forceDistanceFromLeftEndIn_m, lenghtOfLineLoadIn_m;
     private ImageView resultDisplay;
     private int timesBackPressed;
 
@@ -102,12 +101,6 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         checkShowResult = (ImageButton) findViewById(R.id.check_show_result);
         checkShowResult.setTag(true);
 
-        checkShowDimensions = (ImageButton) findViewById(R.id.check_show_dimension);
-        checkShowDimensions.setTag(true);
-
-        checkShowDetailedSolution = (ImageButton) findViewById(R.id.check_show_term_with_solution);
-        checkShowDetailedSolution.setTag(true);
-
         beamLengthIn_m = (EditText) findViewById(R.id.beam_length);
         distanceOfLeftSupportFromLeftEndIn_m = (EditText) findViewById(R.id.left_support_position);
         distanceOfRightSupportFromLeftEndIn_m = (EditText) findViewById(R.id.right_support_position);
@@ -139,34 +132,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
             }
         });
 
-        checkShowDimensions.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if ((boolean) checkShowDimensions.getTag()) {
-                    checkShowDimensions.setTag(false);
-                    checkShowDimensions.setImageResource(R.drawable.show_dim_off);
-                } else {
-                    checkShowDimensions.setTag(true);
-                    checkShowDimensions.setImageResource(R.drawable.show_dim_on);
-                }
-                solveBeamAndShowResult(beamLoadListData);
-            }
-        });
-
-        checkShowDetailedSolution.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if ((boolean) checkShowDetailedSolution.getTag()) {
-                    checkShowDetailedSolution.setTag(false);
-                    checkShowDetailedSolution.setImageResource(R.drawable.show_detailed_solution_off);
-                } else {
-                    checkShowDetailedSolution.setTag(true);
-                    checkShowDetailedSolution.setImageResource(R.drawable.show_detailed_solution_select);
-                }
-                solveBeamAndShowResult(beamLoadListData);
-            }
-        });
-
+        // Add point or line load
         loadAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -241,16 +207,6 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
             checkShowResult.setImageResource(R.drawable.show_result_on);
         else
             checkShowResult.setImageResource(R.drawable.show_result_off);
-
-        if ((boolean) checkShowDetailedSolution.getTag())
-            checkShowDetailedSolution.setImageResource(R.drawable.show_detailed_solution_select);
-        else
-            checkShowDetailedSolution.setImageResource(R.drawable.show_detailed_solution_off);
-
-        if ((boolean) checkShowDimensions.getTag())
-            checkShowDimensions.setImageResource(R.drawable.show_dim_on);
-        else
-            checkShowDimensions.setImageResource(R.drawable.show_dim_off);
     }
 
     /**
@@ -272,11 +228,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
      * Rename load's
      * <p>
      * When a load was deleted, this method should be called in order
-<<<<<<< HEAD
      * to reassign the load name indices in the right order.
-=======
-     * to reassign the load name indices.
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
      * <p>
      * See: {@link #beamLoadListData}
      */
@@ -326,48 +278,26 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
      * @param loadLength
      */
     @Override
-<<<<<<< HEAD
     public void getLoadInputDialogData(String buttonPressed, String loadMagnitute, String loadLength, String loadPosition) {
-=======
-    public void getDialogInput(String buttonPressed, String loadMagnitute, String loadLength, String loadPosition) {
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
         if (buttonPressed.equals(FragmentLoadInput.BUTTON_OK_WAS_PRESSED)) {
             try {
                 Double force_N = Double.valueOf(loadMagnitute);
-<<<<<<< HEAD
+
                 Double positionFromLeftEnd_m = Double.valueOf(loadPosition);
                 Double angleOfLoad_DEG = 0.0; // This version only supports up or downwards acting single loads...
                 Double lengthOfLoad_m = Double.valueOf(loadLength);
                 String nameOfLoad = buildNameOfLoad(lengthOfLoad_m, beamLoadListData.size());
 
                 Load load = new Load(nameOfLoad, force_N, positionFromLeftEnd_m, angleOfLoad_DEG, lengthOfLoad_m, INCLUDE_THIS_LOAD_INTO_CALCULATION, LOAD_HAS_NO_ERROR);
-                Log.v(tag, "Name:"+nameOfLoad+"  Force:"+force_N+" X0:"+positionFromLeftEnd_m+" Angle:"+angleOfLoad_DEG+"  length:"+lengthOfLoad_m);
-=======
-                Double forceEnd_N=force_N;
-                Double x0_m = Double.valueOf(loadPosition);
-                Double angleOfLoad_DEG = 0.0;
-                Double fl_m = Double.valueOf(loadLength);
-                String nameOfLoad = buildNameOfLoad(fl_m, beamLoadListData.size());
-
-
-                // Load(String nameOfLoad, double forceStart_N, double distanceFromLeftEndOfBeam_m, double angleOfLoad_degrees,
-                // double lengthOfLineLoad_m, boolean includeThisLoadIntoCaclulation, boolean thisLoadHasAnError)
-                Load load = new Load(nameOfLoad, force_N, forceEnd_N, x0_m, angleOfLoad_DEG, fl_m, INCLUDE_THIS_LOAD_INTO_CALCULATION, LOAD_HAS_NO_ERROR);
-
-
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
+                Log.v(tag, "Name:" + nameOfLoad + "  Force:" + force_N + " X0:" + positionFromLeftEnd_m + " Angle:" + angleOfLoad_DEG + "  length:" + lengthOfLoad_m);
 
                 beamLoadListData.add(load);
                 beamLoadListAdapter.notifyDataSetChanged();
                 renameLoads();
-<<<<<<< HEAD
 
                 solveBeamAndShowResult(beamLoadListData);
-=======
-                solveBeamAndShowResult(beamLoadListData);
 
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
             } catch (NumberFormatException e) {
                 Log.v(tag, "Could not convert");
             }
@@ -415,9 +345,6 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
             Beam beam = createBeam();
             BeamResult result = BeamSolver.getResults(beam, "2f");
             Load load;
-            boolean showResult = false;
-            boolean showDimensions = false;
-            boolean showMatTerm = false;
             boolean includeThisLoadIntoCalculation;
 
             // Clear all errors from load list
@@ -463,21 +390,10 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
 
                         beamLoadListData.set(indexOfError, loadWithError);
                     }
-
                 }
             }
 
-            // Draw beam, loads and, if error: Describe errors
-            if ((boolean) checkShowDimensions.getTag())
-                showDimensions = true;
-
-            if ((boolean) checkShowResult.getTag())
-                showResult = true;
-
-            if ((boolean) checkShowDetailedSolution.getTag())
-                showMatTerm = true;
-
-            drawingOfResult = ShowResult.draw(result, beam, showResult, showDimensions, showMatTerm, getResources());
+            drawingOfResult = ShowResult.draw(result, beam, (boolean)checkShowResult.getTag(), getResources());
             resultDisplay.setImageBitmap(drawingOfResult);
 
             beamLengthIn_m.setBackgroundColor(Color.TRANSPARENT);
@@ -527,19 +443,14 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                 //String nameOfLoad=buildNameOfLoad(beamLoadListData.get(i),i);
                 //beamLoadListData.get(i).changeNameTo(nameOfLoad);
                 String nameOfLoad = beamLoadListData.get(i).getName();
-<<<<<<< HEAD
+
                 double force_N = beamLoadListData.get(i).getForce_N();
                 double distanceFromLeft_m = beamLoadListData.get(i).getDistanceFromLeftEndOfBeam_m();
                 double lengthOfLineLoad_m = beamLoadListData.get(i).getLengthOfLineLoad_m();
                 Load load = new Load(nameOfLoad, force_N, distanceFromLeft_m, 0, lengthOfLineLoad_m, INCLUDE_THIS_LOAD_INTO_CALCULATION, LOAD_HAS_NO_ERROR);
-=======
-                double force_F = beamLoadListData.get(i).getForce_N();
-                double distanceFromLeft_m = beamLoadListData.get(i).getDistanceFromLeftEndOfBeam_m();
-                double lengthOfLineLoad_m = beamLoadListData.get(i).getLengthOfLineLoad_m();
-                Load load = new Load(nameOfLoad, force_F, distanceFromLeft_m, 0, lengthOfLineLoad_m, INCLUDE_THIS_LOAD_INTO_CALCULATION, LOAD_HAS_NO_ERROR);
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
+
                 beam.addLoad(load);
-                Log.v(tag+"CREATEBEAM", "Name:"+nameOfLoad+"  Force:"+force_N+" X0:"+distanceFromLeft_m+"  length:"+lengthOfLineLoad_m);
+                Log.v(tag + "CREATEBEAM", "Name:" + nameOfLoad + "  Force:" + force_N + " X0:" + distanceFromLeft_m + "  length:" + lengthOfLineLoad_m);
             }
         }
         return beam;
@@ -598,8 +509,6 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         editor.putString("distanceOfLeftSupportFromLeftEndIn_m", distanceOfLeftSupportFromLeftEndIn_m.getText().toString());
         editor.putString("distanceOfRightSupportFromLeftEndIn_m", distanceOfRightSupportFromLeftEndIn_m.getText().toString());
         editor.putBoolean("displayResult", (boolean) checkShowResult.getTag());
-        editor.putBoolean("displayDimensions", (boolean) checkShowDimensions.getTag());
-        editor.putBoolean("displayMathTerm", (boolean) checkShowDetailedSolution.getTag());
 
         String st;
         st = ConvertLoadListObject.toStringObject(beamLoadListData);
@@ -624,8 +533,6 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         lenghtOfLineLoadIn_m.setText(sharedPreferences.getString("lengthOfLineLoadIn_m", defaultValue));
         */
         checkShowResult.setTag(sharedPreferences.getBoolean("displayResult", false));
-        checkShowDimensions.setTag(sharedPreferences.getBoolean("displayDimensions", false));
-        checkShowDetailedSolution.setTag(sharedPreferences.getBoolean("displayMathTerm", false));
         upDateButtons();
 
         String loadListDataString = sharedPreferences.getString("loadListData", null);

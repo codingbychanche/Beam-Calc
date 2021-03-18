@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "/media/berthold/Bertholds Zeug/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/res/values-night-v8/values-night-v8.xml",
-=======
-            "outputFile": "/Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
-            "map": [
-                {
-                    "source": "/Users/Berthold/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/res/values-night-v8/values-night-v8.xml",
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

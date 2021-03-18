@@ -22,22 +22,6 @@
             android:src="@drawable/show_result_on">
         </ImageButton>
 
-        <ImageButton
-            android:id="@+id/check_show_term_with_solution"
-            android:layout_toRightOf="@+id/check_show_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/show_detailed_solution_select">
-        </ImageButton>
-
-
-        <ImageButton
-            android:id="@+id/check_show_dimension"
-            android:layout_toRightOf="@+id/check_show_term_with_solution"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/show_dim_on">
-        </ImageButton>
 
         <ImageButton
             android:id="@+id/fold_unfold_data_area"
@@ -49,10 +33,10 @@
 
         <ImageButton
             android:id="@+id/add_load"
-            android:layout_toRightOf="@+id/check_show_dimension"
-            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/check_show_result"
+            android:layout_toRightOf="@+id/check_show_dimension"
             android:src="@drawable/add_load_icon" />
     </RelativeLayout>
 

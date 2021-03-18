@@ -1173,7 +1173,6 @@ id center_vertical
 id chains
 id check_show_dimension
 id check_show_result
-id check_show_term_with_solution
 id checkbox
 id checked
 id chronometer

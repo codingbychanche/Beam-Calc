@@ -1,7 +1,7 @@
 package berthold.beamcalc;
 
 import android.app.Activity;
-<<<<<<< HEAD
+
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,36 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-=======
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothManager;
-import android.os.Build;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.DialogFragment;
 
-<<<<<<< HEAD
-=======
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 
-import static android.content.Context.BLUETOOTH_SERVICE;
-
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
 /**
  * Add load to beam
  */
@@ -67,11 +43,9 @@ public class FragmentLoadInput extends DialogFragment {
      * this fragment to it's activity
      */
     public interface getDataFromFragment {
-<<<<<<< HEAD
+
         void getLoadInputDialogData(String buttonPressed, String loadMagnitute, String loadPosition, String loadLength);
-=======
-        void getDialogInput(String buttonPressed, String loadMagnitute, String loadPosition, String loadLength);
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
+
     }
 
     /**
@@ -116,27 +90,19 @@ public class FragmentLoadInput extends DialogFragment {
         okButtonView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String forceMagintute=forceMagnituteView.getText().toString();
-                String forcePosition=forcePositionView.getText().toString();
-                String forceLength=forceLengthView.getText().toString();
+                String forceMagintute = forceMagnituteView.getText().toString();
+                String forcePosition = forcePositionView.getText().toString();
+                String forceLength = forceLengthView.getText().toString();
 
-<<<<<<< HEAD
-                gf.getLoadInputDialogData(BUTTON_OK_WAS_PRESSED, forceMagintute,forcePosition,forceLength);
-=======
-                gf.getDialogInput(BUTTON_OK_WAS_PRESSED, forceMagintute,forceLength,forcePosition);
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
+                gf.getLoadInputDialogData(BUTTON_OK_WAS_PRESSED, forceMagintute, forcePosition, forceLength);
+
                 dismiss();
             }
         });
-
         cancelButtonView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
                 gf.getLoadInputDialogData(BUTTON_CANCEL_WAS_PRESSED, "", "", "");
-=======
-                gf.getDialogInput(BUTTON_CANCEL_WAS_PRESSED, "", "", "");
->>>>>>> 23600157fc9e14b8764bfdedd7ec045702c933f0
                 dismiss();
             }
         });

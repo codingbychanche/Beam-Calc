@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool--SNAPSHOT/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool--SNAPSHOT/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool-master-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool-master-SNAPSHOT/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool-master-SNAPSHOT/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
