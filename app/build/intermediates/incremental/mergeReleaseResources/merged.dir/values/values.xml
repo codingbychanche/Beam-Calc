@@ -216,6 +216,8 @@
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="lightGrey">#BBBBBB</color>
+    <color name="listRowBackground">#eeeeee</color>
+    <color name="listRowBottomShadow">#dddddd</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -599,6 +601,8 @@
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="activity_name">Dateiauswahl</string>
+    <string name="add_load_cancel">Abbruch</string>
+    <string name="add_load_ok">+</string>
     <string name="app_name">BeamCalc</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="beam_definition_title_bar">Träger:</string>
@@ -629,6 +633,13 @@
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="hint_file_dialog">Datei Name</string>
     <string name="leave_warning">Wenn Sie den Back- Button ein zweites mal drücken, wird die App verlassen. Der aktuelle Status wird gespeichert.</string>
+    <string name="load_input_titel">Neue Last</string>
+    <string name="load_length_hint">Länge [m]</string>
+    <string name="load_length_text">l=</string>
+    <string name="load_magnitute_hint">F [N]</string>
+    <string name="load_magnitute_text">F=</string>
+    <string name="load_position_hint">Relativ zum linken Auflager [m]</string>
+    <string name="load_position_text">x0=</string>
     <string name="manu_save_drawing_as_bitmap">Zeichnung speichern.</string>
     <string name="menu_app_info">Info....</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
@@ -2107,10 +2118,6 @@
         <item name="android:textStyle">bold</item>
     </style>
     <style name="DialogBoxTextBody" parent="TextAppearance.AppCompat">
-        <item name="android:layout_marginTop">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item name="android:paddingRight">8dp</item>
-        <item name="android:paddingLeft">8dp</item>
         <item name="android:textSize">15dp</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme.Holo">
