@@ -1,4 +1,4 @@
-#Thu Mar 18 17:04:29 CET 2021
+#Sun Mar 28 15:30:28 CEST 2021
 base.0=/media/berthold/Bertholds Zeug/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

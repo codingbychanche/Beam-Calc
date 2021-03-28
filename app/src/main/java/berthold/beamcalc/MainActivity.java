@@ -30,6 +30,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.google.android.play.core.appupdate.AppUpdateInfo;
+import com.google.android.play.core.appupdate.AppUpdateManager;
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
+import com.google.android.play.core.install.model.AppUpdateType;
+import com.google.android.play.core.install.model.UpdateAvailability;
+import com.google.android.play.core.tasks.OnSuccessListener;
+import com.google.android.play.core.tasks.Task;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,6 +84,47 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         timesBackPressed = 0;
+    }
+
+    /**
+     * This is a test.
+     * Checks for available Updates....
+     *
+     * @rem:Shows how to check for an update via the google play core library or via a custom made version checker@@
+     */
+    @Override
+    public void onStart(){
+        super.onStart();
+
+        Log.v("UPDATEUPDATE:","CHECKING..");
+
+        //
+        // Play core library
+        //
+        AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
+
+        // Returns an intent object that you use to check for an update.
+        Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
+
+        appUpdateInfoTask.addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
+            @Override
+            public void onSuccess(AppUpdateInfo result) {
+                if (result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE) {
+                    Toast.makeText(getApplicationContext(), "Update available.....", Toast.LENGTH_LONG).show();
+                    Log.v("UPDATEUPDATE:", result.availableVersionCode() + "");
+                }else
+                    Log.v("UPDATEUPDATE:","No Update");
+            }
+        });
+
+        //
+        // Version checker
+        //
+        VersionChecker vc=new VersionChecker();
+        try {
+            String latest = vc.execute().get();
+            Toast.makeText(getApplicationContext(), "Latest Version Code:"+latest, Toast.LENGTH_LONG).show();
+        } catch (Exception e){}
     }
 
     /**
@@ -393,7 +442,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                 }
             }
 
-            drawingOfResult = ShowResult.draw(result, beam, (boolean)checkShowResult.getTag(), getResources());
+            drawingOfResult = ShowResult.draw(result, beam, (boolean) checkShowResult.getTag(), getResources());
             resultDisplay.setImageBitmap(drawingOfResult);
 
             beamLengthIn_m.setBackgroundColor(Color.TRANSPARENT);

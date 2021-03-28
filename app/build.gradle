@@ -34,6 +34,12 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
+    // @rem:Imports the google play core library. This, for example, allows one to check in app for updates.@@
+    implementation 'com.google.android.play:core:1.10.0'
+
+    // jsoup HTML parser library @ https://jsoup.org/
+    implementation 'org.jsoup:jsoup:1.13.1'
+
     implementation 'com.github.codingbychanche:FileDialogTool:-SNAPSHOT'
 
     testImplementation 'junit:junit:4.12'
