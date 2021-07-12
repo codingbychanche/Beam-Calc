@@ -1236,6 +1236,7 @@ id image
 id imageView
 id include_this_load_in_calculation
 id info
+id info_new_version_available
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1377,7 +1378,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id version_tag
 id view_offset_helper
 id visible
 id withText
@@ -1557,6 +1557,8 @@ string save_drawing_as_bitmap
 string search_menu_title
 string state_saved
 string status_bar_notification_info_overflow
+string version_info_ok
+string version_info_update_available
 style ActivityTitelText
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

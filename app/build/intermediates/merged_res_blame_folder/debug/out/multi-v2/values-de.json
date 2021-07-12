@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool-master-SNAPSHOT/res/values-de/values-de.xml",
+                    "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool--SNAPSHOT/res/values-de/values-de.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

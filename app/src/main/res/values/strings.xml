@@ -60,5 +60,18 @@
     <string name="confirm_save_at">Datei speichern</string>
     <string name="cancel_save">Nicht speichern</string>
 
+    <!-- Info activity -->
+    <string name="version_info_update_available">
+     <![CDATA[
+        Es ist eine neuere Version dieser App im Google Play Store verfügbar. Einsatzplan Version:
+        ]]>
+    </string>
+
+    <string name="version_info_ok">
+     <![CDATA[
+        Ihre App ist auf dem neustem Stand.
+        ]]>
+    </string>
+
 
 </resources>

@@ -1,9 +1,12 @@
 package berthold.beamcalc;
 
+import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.text.HtmlCompat;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,6 +34,7 @@ public class InfoActivity extends AppCompatActivity {
     // Html
     private StringBuilder htmlSite;
     private WebView webView;
+    private TextView updateInfoView;
     private ProgressBar progress;
 
     @Override
@@ -40,9 +44,8 @@ public class InfoActivity extends AppCompatActivity {
 
         // UI
         final Handler handler=new Handler();
-        final TextView versionNameTagView;
-        versionNameTagView=(TextView)findViewById(R.id.version_tag);
         webView=(WebView)findViewById(R.id.browser);
+        updateInfoView=findViewById(R.id.info_new_version_available);
         progress=(ProgressBar)findViewById(R.id.html_load_progress);
 
         // @rem:Get current locale (determine language from Androids settings@@
@@ -51,15 +54,26 @@ public class InfoActivity extends AppCompatActivity {
         Log.v("LOCALE","Country:"+current);
 
         // @rem: Shows how to retrieve the version- name tag from the 'build.gradle'- file@@
+        String currentVersion="-";
+
         try {
             PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-            String version = pInfo.versionName;
-            versionNameTagView.setText("Version:"+version);
+            currentVersion = pInfo.versionName;
+            getSupportActionBar().setSubtitle("Version:"+currentVersion);
+
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
-            versionNameTagView.setText("-");
+            getSupportActionBar().setSubtitle("Version: -");
         }
         //@@
+
+        String latestVersionInGooglePlay=getAppVersionfromGooglePlay(getApplicationContext());
+
+        if (latestVersionInGooglePlay.equals(currentVersion)) {
+            //updateInfoView.setText(getResources().getText(R.string.version_info_is_latest_version));
+            updateInfoView.setText(HtmlCompat.fromHtml(getResources().getText(R.string.version_info_ok)+"",0));
+        } else
+            updateInfoView.setText(HtmlCompat.fromHtml(getResources().getText(R.string.version_info_update_available) + latestVersionInGooglePlay,0));
 
         // Load html...
         progress.setVisibility(View.VISIBLE);
@@ -104,5 +118,23 @@ public class InfoActivity extends AppCompatActivity {
             }
         });
         t.start();
+    }
+
+    /**
+     * Returns the version from the app's Google Play store listing...
+     *
+     * @param c
+     * @return A String containing the version tag.
+     */
+    public String getAppVersionfromGooglePlay(Context c){
+        String latest;
+        VersionChecker vc=new VersionChecker();
+
+        try {
+            latest = vc.execute().get();
+        } catch (Exception e){
+            latest="-";
+        }
+        return latest;
     }
 }

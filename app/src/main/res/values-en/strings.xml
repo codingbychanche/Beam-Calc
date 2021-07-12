@@ -53,4 +53,17 @@
     <string name="load_length_text">l=</string>
     <string name="load_position_hint">From left support [m]</string>
     <string name="load_input_titel">New Load</string>
+
+    <!-- Info activity -->
+    <string name="version_info_update_available">
+     <![CDATA[
+        Es ist eine neuere Version dieser App im Google Play Store verfügbar. Einsatzplan Version:
+        ]]>
+    </string>
+
+    <string name="version_info_ok">
+     <![CDATA[
+        Ihre App ist auf dem neustem Stand.
+        ]]>
+    </string>
 </resources>

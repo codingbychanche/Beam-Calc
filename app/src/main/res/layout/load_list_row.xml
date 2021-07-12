@@ -51,7 +51,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:hint="000,xx m"
+            android:hint="-"
             android:scrollbars="horizontal"
             android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:hint="xx.xx m"
+            android:hint="-"
             android:textSize="15dp"
             app:layout_constraintStart_toEndOf="@+id/force_x0"
             app:layout_constraintTop_toTopOf="@+id/force_x0" />
