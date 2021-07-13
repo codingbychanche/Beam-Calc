@@ -93,10 +93,10 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
      * @rem:Shows how to check for an update via the google play core library or via a custom made version checker@@
      */
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
 
-        Log.v("UPDATEUPDATE:","CHECKING..");
+        Log.v("UPDATEUPDATE:", "CHECKING..");
 
         //
         // Play core library
@@ -112,19 +112,21 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                 if (result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE) {
                     Toast.makeText(getApplicationContext(), "Update available.....", Toast.LENGTH_LONG).show();
                     Log.v("UPDATEUPDATE:", result.availableVersionCode() + "");
-                }else
-                    Log.v("UPDATEUPDATE:","No Update");
+                } else
+                    Log.v("UPDATEUPDATE:", "No Update");
             }
         });
 
         //
         // Version checker
         //
+        /*
         VersionChecker vc=new VersionChecker();
         try {
             String latest = vc.execute().get();
             Toast.makeText(getApplicationContext(), "Latest Version Code:"+latest, Toast.LENGTH_LONG).show();
         } catch (Exception e){}
+        */
     }
 
     /**

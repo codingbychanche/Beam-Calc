@@ -9,6 +9,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.Log;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.berthold.beamCalc.*;
@@ -41,6 +42,7 @@ public class ShowResult {
     private static final int PADDING_Y = 80;
 
     // Number format
+    // ToDO: Get this from library... Beam- Object has this stored (passed when solve is started.....)
     private static String floatNumberFormatPreset = "%.2f";
 
     // Drawing parameters
@@ -229,6 +231,42 @@ public class ShowResult {
                 canvas.drawText(loadDescription, (float) (x0 + x + ACTING_FORCE_TEXT_X_OFFSET), y0 + ACTING_FORCE_TEXT_Y_OFFSET + loadLengthInPixels, paint);
             }
         }
+
+        // Marks maxima and minima of bending moments
+        if(displayResult) {
+            StressResultantTable qTable = QSolver.solve(beam, "N");
+            StressResultantTable mTable = MSolver.solve(qTable, beam, "Nm");
+            List<StressResultant> maxima = new ArrayList<>();
+            maxima = mTable.getMaxima();
+
+            for (StressResultant r : maxima) {
+
+                x = getXcoordinateFromBeamStartInPixels(r.getX_m(), beamLengthInPixels, beam.getLength());
+
+                paint.setAlpha(50);
+                if (r.getShearingForce()>0)
+                    paint.setColor(Color.GREEN);
+                else
+                    paint.setColor(Color.RED);
+
+                canvas.drawCircle((float) (x0 + x), y0, 10, paint);
+
+                String bendingMoment =String.format(floatNumberFormatPreset,r.getShearingForce()) + " " + r.getUnit();
+                String pos="x="+String.format(floatNumberFormatPreset,r.getX_m())+" m";
+                x = getSaveXpos(bendingMoment, x, x0, paint);
+                paint.setAlpha(255);
+                paint.setColor(Color.BLACK);
+                if (r.getShearingForce() > 0) {
+                    canvas.drawText(bendingMoment, (float) (x0 + x + ACTING_FORCE_TEXT_X_OFFSET), y0 - ACTING_FORCE_TEXT_Y_OFFSET, paint);
+                    canvas.drawText(pos,(float) (x0 + x + ACTING_FORCE_TEXT_X_OFFSET), y0 - 2*ACTING_FORCE_TEXT_Y_OFFSET, paint);
+                } else {
+                    canvas.drawText(bendingMoment, (float) (x0 + x + ACTING_FORCE_TEXT_X_OFFSET), y0 + ACTING_FORCE_TEXT_Y_OFFSET, paint);
+                    canvas.drawText(pos,(float) (x0 + x + ACTING_FORCE_TEXT_X_OFFSET), y0 + 2*ACTING_FORCE_TEXT_Y_OFFSET, paint);
+                }
+            }
+        }
+        paint.setAlpha(255);
+        paint.setColor(Color.BLACK);
 
         // Draw beam and supports.....
 
