@@ -66,4 +66,19 @@
         Ihre App ist auf dem neustem Stand.
         ]]>
     </string>
+
+    <string name="dialog_new_version_available">
+        <![CDATA[<p><b>Neue Version verfügbar</b></p>
+
+        <p>Im <i>Google Play Store</i> ist eine überarbeitete Version dieser <i>App</i> verfügbar.</p>
+
+        <p>Wenn Sie möchten, dann können sie von hier aus direkt in den <i>Google Play Store</i> wechseln und das Update durchführen.</p>
+
+        <p>Ihre Einstellung und gespeicherten Daten bleiben erhalten.</p>
+
+        Neue Version:]]>
+    </string>
+
+    <string name="do_update_confirm_button">Update</string>
+    <string name="no_udate_button">Nein,danke</string>
 </resources>

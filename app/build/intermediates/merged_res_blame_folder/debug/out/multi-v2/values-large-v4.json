@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/media/berthold/Bertholds Zeug/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "/media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/res/values-large-v4/values-large-v4.xml",

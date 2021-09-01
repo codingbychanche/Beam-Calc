@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ fragment_custom_dialog_yes_no.xml
+  ~
+  ~ Created by Berthold Fritz
+  ~
+  ~ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License:
+  ~ https://creativecommons.org/licenses/by-nc-sa/4.0/
+  ~
+  ~ Last modified 3/28/18 9:19 PM
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/screen_shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_dialog_alert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/dialog_text_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="FILE_DIALOG"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/screen_shot"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_text" />
+
+    <Button
+        android:id="@+id/ok_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cancel_button" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ok_button"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_text_input" />
+
+    <WebView
+        android:id="@+id/dialog_text"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toEndOf="@+id/screen_shot"
+        app:layout_constraintTop_toTopOf="@+id/screen_shot"></WebView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

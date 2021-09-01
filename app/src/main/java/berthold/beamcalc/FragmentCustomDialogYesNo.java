@@ -95,7 +95,7 @@ public class FragmentCustomDialogYesNo extends DialogFragment {
     // Inflate fragment layout
     @Override
     public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        return inflater.inflate(R.layout.fragment_custom_dialog_yes_no,container);
+        return inflater.inflate(R.layout.fragment_dialog_yes_no,container);
     }
 
     // This fills the layout with data

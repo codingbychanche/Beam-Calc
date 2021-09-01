@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/media/berthold/Bertholds Zeug/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "/media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/res/values-zh-rHK/values-zh-rHK.xml",

@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +19,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -43,7 +45,7 @@ import java.util.List;
 
 import org.berthold.beamCalc.*;
 
-public class MainActivity extends AppCompatActivity implements FragmentLoadInput.getDataFromFragment {
+public class MainActivity extends AppCompatActivity implements FragmentLoadInput.getDataFromFragment,  FragmentYesNoDialog.getDataFromFragment  {
 
     // Debug
     private String tag;
@@ -69,6 +71,10 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
 
     private static Bitmap drawingOfResult;
 
+    // Custom confirm dialog
+    private static final int CONFIRM_DIALOG_CALLS_BACK_FOR_PERMISSIONS = 1;
+    private static final int CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE = 2;
+
     // Shared pref's
     SharedPreferences sharedPreferences;
 
@@ -84,6 +90,37 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         timesBackPressed = 0;
+
+        //
+        // Check if there is a newer version of this app available at the play store
+        //
+        Thread t=new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(10000);
+                }catch (Exception e){}
+
+                String currentVersion=GetThisAppsVersion.thisVersion(getApplicationContext());
+
+                String latestVersionInGooglePlay;
+                VersionChecker vc = new VersionChecker();
+
+                try {
+                    latestVersionInGooglePlay = vc.execute().get();
+                } catch (Exception e) {
+                    latestVersionInGooglePlay = "-";
+                }
+
+                if (!latestVersionInGooglePlay.equals(currentVersion)) {
+                    String dialogText = getResources().getString(R.string.dialog_new_version_available)+" "+latestVersionInGooglePlay;
+                    String ok = getResources().getString(R.string.do_update_confirm_button);
+                    String cancel = getResources().getString(R.string.no_udate_button);
+                    showConfirmDialog(CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE, FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG, dialogText.toString(), ok, cancel);
+                }
+            }
+        });
+        t.start();
     }
 
     /**
@@ -101,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         //
         // Play core library
         //
+        /*
         AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
 
         // Returns an intent object that you use to check for an update.
@@ -116,16 +154,6 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                     Log.v("UPDATEUPDATE:", "No Update");
             }
         });
-
-        //
-        // Version checker
-        //
-        /*
-        VersionChecker vc=new VersionChecker();
-        try {
-            String latest = vc.execute().get();
-            Toast.makeText(getApplicationContext(), "Latest Version Code:"+latest, Toast.LENGTH_LONG).show();
-        } catch (Exception e){}
         */
     }
 
@@ -548,6 +576,61 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
             noDataMissing = false;
         }
         return noDataMissing;
+    }
+
+    /**
+     * Shows a confirm dialog.
+     *
+     * @param reqCode
+     * @param kindOfDialog
+     * @param dialogText
+     * @param confirmButton
+     * @param cancelButton
+     */
+    private void showConfirmDialog(int reqCode, int kindOfDialog, String dialogText, String confirmButton, String cancelButton) {
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentYesNoDialog fragmentDeleteRegex =
+                FragmentYesNoDialog.newInstance(reqCode, kindOfDialog, null, dialogText, confirmButton, cancelButton);
+        fragmentDeleteRegex.show(fm, "fragment_dialog");
+    }
+
+    /**
+     * Callback for {@link FragmentYesNoDialog} events.
+     *
+     * @param reqCode
+     * @param dialogTextEntered
+     * @param buttonPressed
+     */
+    @Override
+    public void getDialogInput(int reqCode, String dialogTextEntered, String buttonPressed) {
+
+        //
+        // Grand permission? toDo: Insert permision checker
+        //
+        if (reqCode == CONFIRM_DIALOG_CALLS_BACK_FOR_PERMISSIONS) {
+
+            if (buttonPressed.equals(FragmentYesNoDialog.BUTTON_OK_PRESSED)) {
+
+                // @rem:Shows how to open the Android systems settings activity fro this app.
+                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                Uri uri = Uri.fromParts("package", getPackageName(), null);
+                intent.setData(uri);
+                startActivity(intent);
+                //@@
+            } else {
+                // String denied = getResources().getString(R.string.permission_denied);
+                //Toast.makeText(MainActivity.this, denied, Toast.LENGTH_LONG).show();
+            }
+        }
+        //
+        // Update this app?
+        //
+        if(reqCode==CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE){
+            if (buttonPressed.equals(FragmentYesNoDialog.BUTTON_OK_PRESSED)) {
+                Intent Getintent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.berthold.convertjobscheduletocalendar&hl=de"));
+                startActivity(Getintent);
+            }
+        }
     }
 
     /**

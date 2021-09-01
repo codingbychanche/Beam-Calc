@@ -1458,8 +1458,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout file_list_active_entry
-layout fragment_custom_dialog_yes_no
 layout fragment_dialog_show_file_info
+layout fragment_dialog_yes_no
 layout fragment_load_input
 layout load_list_row
 layout mtrl_layout_snackbar
@@ -1530,6 +1530,8 @@ string confirm_dialog_overwrite
 string confirm_dialog_save_at
 string confirm_overwrite
 string confirm_save_at
+string dialog_new_version_available
+string do_update_confirm_button
 string drawing_was_saved
 string error_message
 string fab_transformation_scrim_behavior
@@ -1547,6 +1549,7 @@ string load_position_text
 string manu_save_drawing_as_bitmap
 string menu_app_info
 string mtrl_chip_close_icon_content_description
+string no_udate_button
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
