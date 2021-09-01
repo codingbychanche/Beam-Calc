@@ -29,7 +29,7 @@ import org.berthold.beamCalc.*;
 
 import berthold.filedialogtool.*;
 
-public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustomDialogYesNo.getDataFromFragment{
+public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoDialog.getDataFromFragment{
 
     // Data
     Beam beam;
@@ -47,7 +47,6 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
     private String savePath;
 
     // Confirm dialog fragment
-    private static final int NOT_REQUIERED=0;
     private static final int REQUEST_YES_NO_DIALOG_SAVE_NEW_FILE=2;
 
     private static final int REQUEST_YES_NO_DIALOG_OVERWRITE_EXISTING_FILE=3;
@@ -107,7 +106,7 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
         // Show dialog
         if (SHOW_CONFIRM_SAVE_AT){
             showConfirmDialog(REQUEST_YES_NO_DIALOG_SAVE_NEW_FILE,
-                    FragmentCustomDialogYesNo.SHOW_WITH_EDIT_TEXT,
+                    FragmentYesNoDialog.SHOW_WITH_EDIT_TEXT,
                     getResources().getString(R.string.confirm_dialog_save_at)+"\n"+savePath,
                     getResources().getString(R.string.confirm_save_at),
                     getResources().getString(R.string.cancel_save));
@@ -115,7 +114,7 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
 
         if (SHOW_CONFIRM_OVERWRITE){
             showConfirmDialog(REQUEST_YES_NO_DIALOG_SAVE_NEW_FILE,
-                    FragmentCustomDialogYesNo.SHOW_AS_YES_NO_DIALOG,
+                    FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG,
                     (getResources().getString(R.string.confirm_dialog_overwrite)+" \n"+savePath),
                     getResources().getString(R.string.confirm_save_at),
                     getResources().getString(R.string.cancel_save));
@@ -130,9 +129,9 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
      */
 
     @Override
-    protected void onActivityResult(int reqCode,int resCode,Intent data)
-    {
-        if (resCode==RESULT_OK && reqCode==GET_PATH ){
+    protected void onActivityResult(int reqCode,int resCode,Intent data) {
+        super.onActivityResult(reqCode, resCode, data);
+        if (resCode == RESULT_OK && reqCode == GET_PATH) {
             if (data.hasExtra("path")) {
 
                 // When saving a file:
@@ -143,19 +142,19 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
                 String returnStatus = data.getExtras().getString(FileDialog.RETURN_STATUS);
 
                 if (data.hasExtra("path"))
-                   savePath=data.getExtras().getString("path");
+                    savePath = data.getExtras().getString("path");
 
-                if (returnStatus!=null) {
+                if (returnStatus != null) {
                     // File was picked, ask user if he want's to overwrite it
                     if (returnStatus.equals(FileDialog.FOLDER_AND_FILE_PICKED)) {
-                        SHOW_CONFIRM_OVERWRITE=true;
-                        SHOW_CONFIRM_SAVE_AT=false;
+                        SHOW_CONFIRM_OVERWRITE = true;
+                        SHOW_CONFIRM_SAVE_AT = false;
                     }
 
                     // Just the folder, ask user for filename
                     if (returnStatus.equals(FileDialog.JUST_THE_FOLDER_PICKED)) {
-                        SHOW_CONFIRM_OVERWRITE=false;
-                        SHOW_CONFIRM_SAVE_AT=true;
+                        SHOW_CONFIRM_OVERWRITE = false;
+                        SHOW_CONFIRM_SAVE_AT = true;
                     }
                 }
             }
@@ -165,11 +164,11 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
     /**
      * Callback for yesNoDialog
      *
-     * @see FragmentCustomDialogYesNo
+     * @see FragmentYesNoDialog
      *
      */
     @Override
-    public void getDialogInput(int reqCode,int data,String filename,String buttonPressed)
+    public void getDialogInput(int reqCode,String filename,String buttonPressed)
     {
         // Callback from confirm dialog
         // Existing file will be overwritten or a new file will be created
@@ -177,7 +176,7 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
         if(reqCode==REQUEST_YES_NO_DIALOG_SAVE_NEW_FILE){
             File test=new File (savePath + "/"+filename);
 
-            if (buttonPressed.equals(FragmentCustomDialogYesNo.BUTTON_OK_PRESSED)) {
+            if (buttonPressed.equals(FragmentYesNoDialog.BUTTON_OK_PRESSED)) {
 
                 // Create a new file if it does not already exist
                 if (SHOW_CONFIRM_SAVE_AT) {
@@ -187,7 +186,7 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
                         // File already exists
                         // Ask user if he want's to overwrite it
                         showConfirmDialog(REQUEST_YES_NO_DIALOG_OVERWRITE_EXISTING_FILE,
-                                FragmentCustomDialogYesNo.SHOW_AS_YES_NO_DIALOG,
+                                FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG,
                                 (getResources().getString(R.string.confirm_dialog_name_already_exists) + " \n" + savePath + "/" + filename),
                                 getResources().getString(R.string.confirm_save_at),
                                 getResources().getString(R.string.cancel_save));
@@ -207,7 +206,7 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
         // This is executed when in an prvious dialog filename of an existing file
         // was entered...
         if(reqCode==REQUEST_YES_NO_DIALOG_OVERWRITE_EXISTING_FILE){
-            if(buttonPressed.equals(FragmentCustomDialogYesNo.BUTTON_OK_PRESSED)){
+            if(buttonPressed.equals(FragmentYesNoDialog.BUTTON_OK_PRESSED)){
                 saveFile(pathAndFilenameOfFileToBeOverwritten);
                 Log.v("FILENAME",":"+pathAndFilenameOfFileToBeOverwritten);
             }
@@ -235,14 +234,14 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentCustom
     /**
      * Show confirm at dialog.
      *
-     * @see FragmentCustomDialogYesNo
+     * @see FragmentYesNoDialog
      */
 
     private void showConfirmDialog(int reqCode,int kindOfDialog,String dialogText,String confirmButton,String cancelButton)
     {
         FragmentManager fm = getSupportFragmentManager();
-        FragmentCustomDialogYesNo fragmentDeleteRegex =
-                FragmentCustomDialogYesNo.newInstance(reqCode,kindOfDialog,NOT_REQUIERED,null,dialogText,confirmButton,cancelButton);
+       FragmentYesNoDialog fragmentDeleteRegex =
+                FragmentYesNoDialog.newInstance(reqCode,kindOfDialog,null,dialogText,confirmButton,cancelButton);
         fragmentDeleteRegex.show(fm, "fragment_dialog");
     }
 

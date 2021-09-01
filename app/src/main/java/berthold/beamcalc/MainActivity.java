@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         //
         // Check if there is a newer version of this app available at the play store
         //
+        // todo Take care that this dialog is shown only once, after the app was started......
+        //
         Thread t=new Thread(new Runnable() {
             @Override
             public void run() {
