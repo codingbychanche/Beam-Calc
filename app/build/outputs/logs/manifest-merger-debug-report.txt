@@ -1,263 +1,274 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /home/berthold/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.material:material:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:2:1-23:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7087e7f62a3d23efa2c47cb5fc0ce856/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/3db056b7b2a67d9700cd1094de7f7779/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/087418591f402220f122a32114fbea96/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2d066e905929e83fd161d6c35ce0719e/transition-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/f52122426ed85128097908a2e58f6328/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/a22fab001772e3213fd3f87fdd80b5c6/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/bfe66e5c1e3890ed194fe4c90f780fb5/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.loader:loader:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/3a40d00373143d317b2bee08071df362/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/40996d6039fa2fb22354b30f3d767665/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1aafd20561bc3ee9f58c28dfa8215062/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/92001d884bae6b5cefc26e21923317cd/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/727f4567341fcf59ba6ec2fbb4290436/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/0b21398ec4672209e12f9d44aaf124af/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/da4859f2c8e5d53f282ea268af4c5fee/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/20725fa20214e86eb8fa55394d5d409e/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/82e63553b4b022cfff1711ae9819aad4/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/89148e3dbb2482b98d2c6649d887f30f/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2c4abb3c9f84da22a9da11e175a85c23/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/247f3bbc11fc5188f3d3375e9cc247ac/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/129d7c6539a600a7346451cc911530ca/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1f30c507ad647a41e33ed33c8e0ba570/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/a8ecbda6ffad5e6f54ae110042f6865e/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/fa40148eab14a6d2386ba091992d3749/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/aaff256ac919a45448a380ca9a0003ca/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/06bc4641de51b04d4df94808d6e05292/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1b64911e987df0fea019408e241659d7/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2ef7075f73d2e2de44abaa796f0222ce/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/ed731ef0ae48e67de128afa89bfb34a2/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/bf72a15a3ccfe7bc47129422d9cddb0c/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.material:material:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/9a993c6c225994ea69d3bb36157a0ce4/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3703f1f33ef9fc0bc7ffcf1df97ef37e/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/b5de9753f7aeb8da9cdfba74ef245a89/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/84a59828f277b9fbf20587da05a8f37b/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/7087e7f62a3d23efa2c47cb5fc0ce856/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3db056b7b2a67d9700cd1094de7f7779/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/727f4567341fcf59ba6ec2fbb4290436/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/087418591f402220f122a32114fbea96/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2d066e905929e83fd161d6c35ce0719e/transition-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/1aafd20561bc3ee9f58c28dfa8215062/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3a40d00373143d317b2bee08071df362/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/89148e3dbb2482b98d2c6649d887f30f/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a8ecbda6ffad5e6f54ae110042f6865e/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/92001d884bae6b5cefc26e21923317cd/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/0b21398ec4672209e12f9d44aaf124af/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/da4859f2c8e5d53f282ea268af4c5fee/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/20725fa20214e86eb8fa55394d5d409e/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/247f3bbc11fc5188f3d3375e9cc247ac/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ec322e19e59be0ee44ce6650da9ba191/core-1.5.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/129d7c6539a600a7346451cc911530ca/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a87f3b274ad0e924fa17fd148bc67c2e/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ed3d8d0145f049ed7cd5529e8243c25d/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/907d9e6d9aac9b89ad1e9549bdefc10b/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2b5ad10827d6548d0c25f07df7b5388e/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/f52122426ed85128097908a2e58f6328/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/d4569e3efa23eb515ce876e904449af0/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/6f5c322ced54a793b69129742398adbb/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/aaff256ac919a45448a380ca9a0003ca/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/30092b50b5d3d953ed961de55bda8cca/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/8459cf74267acbf7bf85dca1ef465d1f/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2c4abb3c9f84da22a9da11e175a85c23/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a22fab001772e3213fd3f87fdd80b5c6/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/40996d6039fa2fb22354b30f3d767665/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a77c810a56173ccf6fb339f045a6aacd/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
 	package
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:3:5-32
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:3:5-32
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:6:5-80
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:6:5-80
+MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:11:5-80
+MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:6:22-77
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:6:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:7:5-81
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:8:5-66
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:8:22-64
 application
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:11:5-30:19
-MERGED from [com.google.android.material:material:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:10:3-21:17
-MERGED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:10:3-21:17
-MERGED from [androidx.core:core:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/fa40148eab14a6d2386ba091992d3749/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/fa40148eab14a6d2386ba091992d3749/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:11:5-30:19
+MERGED from [com.google.android.material:material:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:10:3-21:17
+MERGED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:10:3-21:17
+MERGED from [androidx.core:core:1.5.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ec322e19e59be0ee44ce6650da9ba191/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ec322e19e59be0ee44ce6650da9ba191/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/d4569e3efa23eb515ce876e904449af0/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/d4569e3efa23eb515ce876e904449af0/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.5.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ec322e19e59be0ee44ce6650da9ba191/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:14:9-41
 	android:icon
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:13:9-36
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:13:9-36
 	android:allowBackup
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:16:9-40
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:16:9-40
 activity#berthold.beamcalc.MainActivity
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:17:9-26:20
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:17:9-26:20
 	android:label
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:19:13-45
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:19:13-45
 	android:theme
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:20:13-56
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:20:13-56
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:18:13-41
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:24:27-74
 activity#berthold.beamcalc.SaveBeamDrawing
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:27:9-53
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:27:9-53
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:27:19-50
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:27:19-50
 activity#berthold.filedialogtool.FileDialog
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:9-71
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:28:9-71
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:19-68
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:28:19-68
 activity#berthold.beamcalc.InfoActivity
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:9-59
+ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:29:9-59
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:19-47
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml:29:19-47
 uses-sdk
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /home/berthold/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /home/berthold/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:4:3-70
-MERGED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:4:3-70
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7087e7f62a3d23efa2c47cb5fc0ce856/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7087e7f62a3d23efa2c47cb5fc0ce856/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/3db056b7b2a67d9700cd1094de7f7779/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/3db056b7b2a67d9700cd1094de7f7779/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/087418591f402220f122a32114fbea96/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/087418591f402220f122a32114fbea96/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2d066e905929e83fd161d6c35ce0719e/transition-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2d066e905929e83fd161d6c35ce0719e/transition-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/f52122426ed85128097908a2e58f6328/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/f52122426ed85128097908a2e58f6328/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/a22fab001772e3213fd3f87fdd80b5c6/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/a22fab001772e3213fd3f87fdd80b5c6/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/bfe66e5c1e3890ed194fe4c90f780fb5/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/bfe66e5c1e3890ed194fe4c90f780fb5/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.loader:loader:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/3a40d00373143d317b2bee08071df362/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/3a40d00373143d317b2bee08071df362/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/40996d6039fa2fb22354b30f3d767665/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/40996d6039fa2fb22354b30f3d767665/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1aafd20561bc3ee9f58c28dfa8215062/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1aafd20561bc3ee9f58c28dfa8215062/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/92001d884bae6b5cefc26e21923317cd/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/92001d884bae6b5cefc26e21923317cd/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/727f4567341fcf59ba6ec2fbb4290436/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/727f4567341fcf59ba6ec2fbb4290436/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/0b21398ec4672209e12f9d44aaf124af/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/0b21398ec4672209e12f9d44aaf124af/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/da4859f2c8e5d53f282ea268af4c5fee/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/da4859f2c8e5d53f282ea268af4c5fee/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/20725fa20214e86eb8fa55394d5d409e/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/20725fa20214e86eb8fa55394d5d409e/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/82e63553b4b022cfff1711ae9819aad4/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/82e63553b4b022cfff1711ae9819aad4/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/89148e3dbb2482b98d2c6649d887f30f/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/89148e3dbb2482b98d2c6649d887f30f/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2c4abb3c9f84da22a9da11e175a85c23/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2c4abb3c9f84da22a9da11e175a85c23/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/247f3bbc11fc5188f3d3375e9cc247ac/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/247f3bbc11fc5188f3d3375e9cc247ac/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/129d7c6539a600a7346451cc911530ca/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/129d7c6539a600a7346451cc911530ca/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1f30c507ad647a41e33ed33c8e0ba570/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1f30c507ad647a41e33ed33c8e0ba570/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/a8ecbda6ffad5e6f54ae110042f6865e/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/a8ecbda6ffad5e6f54ae110042f6865e/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/fa40148eab14a6d2386ba091992d3749/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/fa40148eab14a6d2386ba091992d3749/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/aaff256ac919a45448a380ca9a0003ca/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/aaff256ac919a45448a380ca9a0003ca/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/06bc4641de51b04d4df94808d6e05292/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/06bc4641de51b04d4df94808d6e05292/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1b64911e987df0fea019408e241659d7/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/1b64911e987df0fea019408e241659d7/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2ef7075f73d2e2de44abaa796f0222ce/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/2ef7075f73d2e2de44abaa796f0222ce/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/ed731ef0ae48e67de128afa89bfb34a2/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/ed731ef0ae48e67de128afa89bfb34a2/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/bf72a15a3ccfe7bc47129422d9cddb0c/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/bf72a15a3ccfe7bc47129422d9cddb0c/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/9a993c6c225994ea69d3bb36157a0ce4/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/9a993c6c225994ea69d3bb36157a0ce4/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:4:3-70
+MERGED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:4:3-70
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3703f1f33ef9fc0bc7ffcf1df97ef37e/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3703f1f33ef9fc0bc7ffcf1df97ef37e/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/b5de9753f7aeb8da9cdfba74ef245a89/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/b5de9753f7aeb8da9cdfba74ef245a89/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/84a59828f277b9fbf20587da05a8f37b/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/84a59828f277b9fbf20587da05a8f37b/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/7087e7f62a3d23efa2c47cb5fc0ce856/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/7087e7f62a3d23efa2c47cb5fc0ce856/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3db056b7b2a67d9700cd1094de7f7779/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3db056b7b2a67d9700cd1094de7f7779/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/727f4567341fcf59ba6ec2fbb4290436/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/727f4567341fcf59ba6ec2fbb4290436/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/087418591f402220f122a32114fbea96/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/087418591f402220f122a32114fbea96/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2d066e905929e83fd161d6c35ce0719e/transition-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2d066e905929e83fd161d6c35ce0719e/transition-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/1aafd20561bc3ee9f58c28dfa8215062/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/1aafd20561bc3ee9f58c28dfa8215062/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3a40d00373143d317b2bee08071df362/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/3a40d00373143d317b2bee08071df362/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/89148e3dbb2482b98d2c6649d887f30f/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/89148e3dbb2482b98d2c6649d887f30f/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a8ecbda6ffad5e6f54ae110042f6865e/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a8ecbda6ffad5e6f54ae110042f6865e/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/92001d884bae6b5cefc26e21923317cd/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/92001d884bae6b5cefc26e21923317cd/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/0b21398ec4672209e12f9d44aaf124af/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/0b21398ec4672209e12f9d44aaf124af/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/da4859f2c8e5d53f282ea268af4c5fee/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/da4859f2c8e5d53f282ea268af4c5fee/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/20725fa20214e86eb8fa55394d5d409e/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/20725fa20214e86eb8fa55394d5d409e/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/247f3bbc11fc5188f3d3375e9cc247ac/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/247f3bbc11fc5188f3d3375e9cc247ac/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ec322e19e59be0ee44ce6650da9ba191/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ec322e19e59be0ee44ce6650da9ba191/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/129d7c6539a600a7346451cc911530ca/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/129d7c6539a600a7346451cc911530ca/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a87f3b274ad0e924fa17fd148bc67c2e/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a87f3b274ad0e924fa17fd148bc67c2e/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ed3d8d0145f049ed7cd5529e8243c25d/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/ed3d8d0145f049ed7cd5529e8243c25d/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/907d9e6d9aac9b89ad1e9549bdefc10b/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/907d9e6d9aac9b89ad1e9549bdefc10b/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2b5ad10827d6548d0c25f07df7b5388e/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2b5ad10827d6548d0c25f07df7b5388e/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/f52122426ed85128097908a2e58f6328/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/f52122426ed85128097908a2e58f6328/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/d4569e3efa23eb515ce876e904449af0/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/d4569e3efa23eb515ce876e904449af0/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/6f5c322ced54a793b69129742398adbb/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/6f5c322ced54a793b69129742398adbb/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/aaff256ac919a45448a380ca9a0003ca/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/aaff256ac919a45448a380ca9a0003ca/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/30092b50b5d3d953ed961de55bda8cca/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/30092b50b5d3d953ed961de55bda8cca/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/8459cf74267acbf7bf85dca1ef465d1f/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/8459cf74267acbf7bf85dca1ef465d1f/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2c4abb3c9f84da22a9da11e175a85c23/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/2c4abb3c9f84da22a9da11e175a85c23/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a22fab001772e3213fd3f87fdd80b5c6/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a22fab001772e3213fd3f87fdd80b5c6/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/40996d6039fa2fb22354b30f3d767665/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/40996d6039fa2fb22354b30f3d767665/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a77c810a56173ccf6fb339f045a6aacd/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/a77c810a56173ccf6fb339f045a6aacd/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Berthold/Documents/MyCode/AndroidStudio/Beam-Calc/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:8:3-74
+ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:8:3-74
 	android:name
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:8:20-72
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:8:20-72
 activity#com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity
-ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:12:5-271
+ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:12:5-271
 	android:process
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:12:152-203
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:12:152-203
 	android:enabled
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:12:103-126
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:12:103-126
 	android:stateNotNeeded
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:12:240-269
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:12:240-269
 	android:launchMode
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:12:204-239
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:12:204-239
 	android:exported
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:12:127-151
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:12:127-151
 	android:name
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:12:15-102
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:12:15-102
 activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
-ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:13:5-226
+ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:13:5-226
 	android:enabled
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:13:96-119
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:13:96-119
 	android:stateNotNeeded
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:13:145-174
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:13:145-174
 	android:exported
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:13:120-144
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:13:120-144
 	android:theme
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:13:175-224
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:13:175-224
 	android:name
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:13:15-95
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:13:15-95
 service#com.google.android.play.core.assetpacks.AssetPackExtractionService
-ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:16:5-18:15
+ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:16:5-18:15
 	android:enabled
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:16:96-119
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:16:96-119
 	android:exported
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:16:120-143
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:16:120-143
 	android:name
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:16:14-95
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:16:14-95
 meta-data#com.google.android.play.core.assetpacks.versionCode
-ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:17:7-108
+ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:17:7-108
 	android:value
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:17:85-106
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:17:85-106
 	android:name
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:17:18-84
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:17:18-84
 service#com.google.android.play.core.assetpacks.ExtractionForegroundService
-ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:19:5-147
+ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:19:5-147
 	android:enabled
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:19:97-120
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:19:97-120
 	android:exported
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:19:121-145
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:19:121-145
 	android:name
-		ADDED from [com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7677c0b1a65ee7ef83f7f3fa52840c1e/jetified-core-1.10.0/AndroidManifest.xml:19:14-96
+		ADDED from [com.google.android.play:core:1.10.0] /Users/Berthold/.gradle/caches/transforms-2/files-2.1/667c95c1dc8814b0bb0417b376b12b13/jetified-core-1.10.0/AndroidManifest.xml:19:14-96

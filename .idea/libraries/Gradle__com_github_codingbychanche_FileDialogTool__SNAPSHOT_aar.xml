@@ -7,11 +7,15 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool-master-SNAPSHOT/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool-master-SNAPSHOT/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881d6182fcf6b624374ea5e801865615/jetified-FileDialogTool-master-SNAPSHOT/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.codingbychanche/FileDialogTool/-SNAPSHOT/c872722fa3f664edb98fdbfe97300e561f88d231/FileDialogTool--SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.codingbychanche/FileDialogTool/-SNAPSHOT/4a8e28aa83449b454da1536d092b13d2e20f78bf/FileDialogTool--SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.codingbychanche/FileDialogTool/-SNAPSHOT/8b0c9f7b07f29c5b469fa9b475e6a681cc0285ee/FileDialogTool--SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
