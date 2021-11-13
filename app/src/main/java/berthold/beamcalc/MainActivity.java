@@ -78,6 +78,9 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
     // Shared pref's
     SharedPreferences sharedPreferences;
 
+    // Perms
+    private static final int PERMISSION_REQUEST=200;
+
     /**
      * On Create
      *
@@ -92,37 +95,51 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         timesBackPressed = 0;
 
         //
+        // Check for permissions.
+        // The permissions to be checked have to be defined inside the manifest file.
+        //
+        String[] perms = {"android.permission.READ_EXTERNAL_STORAGE","android.permission.WRITE_EXTERNAL_STORAGE"};
+        int permsRequestCode =PERMISSION_REQUEST;
+
+        // Opens a system dialog requesting permissions, if none of the
+        // permissions asked for were granted already....
+        requestPermissions(perms, permsRequestCode);
+
+        //
         // Check if there is a newer version of this app available at the play store
         //
         // todo Take care that this dialog is shown only once, after the app was started......
         //
-        Thread t=new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(10000);
-                }catch (Exception e){}
+        if (showUpdateInfo()) {
+            Thread t = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Thread.sleep(10000);
+                    } catch (Exception e) {
+                    }
 
-                String currentVersion=GetThisAppsVersion.thisVersion(getApplicationContext());
+                    String currentVersion = GetThisAppsVersion.thisVersion(getApplicationContext());
 
-                String latestVersionInGooglePlay;
-                VersionChecker vc = new VersionChecker();
+                    String latestVersionInGooglePlay;
+                    VersionChecker vc = new VersionChecker();
 
-                try {
-                    latestVersionInGooglePlay = vc.execute().get();
-                } catch (Exception e) {
-                    latestVersionInGooglePlay = "-";
+                    try {
+                        latestVersionInGooglePlay = vc.execute().get();
+                    } catch (Exception e) {
+                        latestVersionInGooglePlay = "-";
+                    }
+
+                    if (!latestVersionInGooglePlay.equals(currentVersion)) {
+                        String dialogText = getResources().getString(R.string.dialog_new_version_available) + " " + latestVersionInGooglePlay;
+                        String ok = getResources().getString(R.string.do_update_confirm_button);
+                        String cancel = getResources().getString(R.string.no_udate_button);
+                        showConfirmDialog(CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE, FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG, dialogText.toString(), ok, cancel);
+                    }
                 }
-
-                if (!latestVersionInGooglePlay.equals(currentVersion)) {
-                    String dialogText = getResources().getString(R.string.dialog_new_version_available)+" "+latestVersionInGooglePlay;
-                    String ok = getResources().getString(R.string.do_update_confirm_button);
-                    String cancel = getResources().getString(R.string.no_udate_button);
-                    showConfirmDialog(CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE, FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG, dialogText.toString(), ok, cancel);
-                }
-            }
-        });
-        t.start();
+            });
+            t.start();
+        }
     }
 
     /**
@@ -750,5 +767,40 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Checks if update info is allowed to be shown again.
+     *
+     * @return true if allowed, false if not.
+     */
+    private boolean showUpdateInfo() {
+        sharedPreferences = getPreferences(MODE_PRIVATE);
+
+        // If the update info has not been shown at least once, then
+        // show it now, for the first time and as a result, also save the
+        // time last shown for the first time.
+        Boolean hasBeenShowedAtLeastOnce = sharedPreferences.getBoolean("hasBeenShownAtLastOnce", false);
+        if (!hasBeenShowedAtLeastOnce)
+            return true;    // Don't show
+
+        // Update info has been shown at least for one time. So check
+        // when this was and if enough time has passed to allow it
+        // to be shown again....
+        Long currentTime = System.currentTimeMillis();
+
+        // Time in Millisec. which has to be passed until update info is
+        // allowed to be shown again since the  last time it
+        // appeared on the screen;
+        int timeDiffUntilNextUpdateInfo = 8 * 60 * 60 * 1000; // Show once every eight hours.....
+
+        Long lastTimeOpened = sharedPreferences.getLong("lastUpdateInfo", currentTime);
+
+        Log.v("TIMETIME", " Last:" + lastTimeOpened + "   current:" + currentTime + "  Diff:" + (currentTime - lastTimeOpened));
+
+        if ((currentTime - lastTimeOpened) > timeDiffUntilNextUpdateInfo)
+            return true;    // Show
+        else
+            return false;   // Don't show
     }
 }

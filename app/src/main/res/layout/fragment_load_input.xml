@@ -83,15 +83,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="24dp"
-
         android:hint="@string/load_magnitute_hint"
         android:inputType="numberSigned|numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/load_magnitute_text"
-        app:layout_constraintStart_toEndOf="@+id/load_magnitute_text"
+        app:layout_constraintStart_toStartOf="@+id/load_position"
         app:layout_constraintTop_toTopOf="@+id/load_magnitute_text"></EditText>
-
-
 
 
     <EditText
@@ -102,7 +98,7 @@
         android:hint="@string/load_length_hint"
         android:inputType="numberSigned|numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/load_length_text"
-        app:layout_constraintStart_toEndOf="@+id/load_length_text"
+        app:layout_constraintStart_toEndOf="@+id/load_position_text"
         app:layout_constraintTop_toTopOf="@+id/load_length_text"></EditText>
 
     <TextView

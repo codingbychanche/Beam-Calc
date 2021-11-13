@@ -27,10 +27,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 
 import org.berthold.beamCalc.*;
 
@@ -63,7 +68,7 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
     private boolean SHOW_CONFIRM_OVERWRITE;
     private boolean SHOW_CONFIRM_SAVE_AT;
     //----------------------------For Android >= 11 ----------------------------------
-   ActivityResultLauncher loadFileActivityResult;
+    ActivityResultLauncher loadFileActivityResult;
     //--------------------------------------------------------------------------------
 
     /*
@@ -84,8 +89,8 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
             //
             // This seems to be the best practice. It creates a public folder.
             // This folder will not be deleted when the app is de- installed
-            workingDir = Environment.getExternalStoragePublicDirectory(appDir);
-            workingDir.mkdirs(); // Create dir, if it does not already exist
+            //workingDir = Environment.getExternalStoragePublicDirectory(appDir);
+            //workingDir.mkdirs(); // Create dir, if it does not already exist
         }
 
         //----------------------------For Android >= 11 ----------------------------------
@@ -96,6 +101,7 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
             loadFileActivityResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
                 @Override
                 public void onActivityResult(ActivityResult result) {
+                    Log.v("RETURN_DATA_","Empty");
                     if (result.getResultCode() == RESULT_OK && result.getData() != null) {
                         Log.v("RETURN_DATA_", result.getData().toString());
 
@@ -104,8 +110,15 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
                         //
                         Uri uri;
                         uri = result.getData().getData();
+                        try {
+                            OutputStream outputStream = getContentResolver().openOutputStream(uri);
+                            drawingOfResult.compress(Bitmap.CompressFormat.PNG, 1, outputStream);
+                            Log.v("SAVING_","Saving.....");
+                            outputStream.close();
 
-                        // todo add saver.....
+                        } catch (Exception e) {
+                            Log.v("ERROR_", e.toString());
+                        }
                     }
                 }
             });
@@ -115,7 +128,6 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
     /**
      * On Resume
      */
-
     @Override
     public void onResume() {
         super.onResume();
@@ -147,8 +159,8 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
                     // This will open the devices file picker and lets
                     // one pick a file....
                     //
-                    Intent pickFileIntent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-                    pickFileIntent.addCategory(Intent.CATEGORY_OPENABLE);
+                    Intent pickFileIntent = new Intent(Intent.ACTION_CREATE_DOCUMENT);
+                    //pickFileIntent.addCategory(Intent.CATEGORY_OPENABLE);
                     pickFileIntent.setType("image/*");
                     loadFileActivityResult.launch(pickFileIntent);
                 }
@@ -180,12 +192,15 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
     /**
      * {@link FileDialog} returns to this method when left.
      * Not needed when compiled for Android 11 (SDK 30).
-     *
+     * <p>
      * Handle result's accordingly (e.g. ask if a picked file can be overwritten etc.)
-     *
      */
+    /*
     @Override
     protected void onActivityResult(int reqCode, int resCode, Intent data) {
+        //
+        // Use this on Android versions <11 (Honeycomb)
+        //
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
             super.onActivityResult(reqCode, resCode, data);
             if (resCode == RESULT_OK && reqCode == GET_PATH) {
@@ -207,7 +222,6 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
                             SHOW_CONFIRM_OVERWRITE = true;
                             SHOW_CONFIRM_SAVE_AT = false;
                         }
-
                         // Just the folder, ask user for filename
                         if (returnStatus.equals(FileDialog.JUST_THE_FOLDER_PICKED)) {
                             SHOW_CONFIRM_OVERWRITE = false;
@@ -218,17 +232,17 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
             }
         }
     }
+    */
 
     /**
      * Callback for yesNoDialog
      * Not needed when compiled for Android 11 (SDK 30)
      *
      * @see FragmentYesNoDialog
-     *
      */
     @Override
     public void getDialogInput(int reqCode, String filename, String buttonPressed) {
-        if (Build.VERSION.SDK_INT< Build.VERSION_CODES.HONEYCOMB) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
             // Callback from confirm dialog
             // Existing file will be overwritten or a new file will be created
             // depending on the users choice in previously shown confirm dialog.
@@ -277,7 +291,6 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
 
     /**
      * Save file
-     *
      */
     private void saveFile(String savePath) {
         try {
@@ -301,5 +314,4 @@ public class SaveBeamDrawing extends AppCompatActivity implements FragmentYesNoD
                 FragmentYesNoDialog.newInstance(reqCode, kindOfDialog, null, dialogText, confirmButton, cancelButton);
         fragmentDeleteRegex.show(fm, "fragment_dialog");
     }
-
 }

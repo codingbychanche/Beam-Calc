@@ -1,4 +1,0 @@
-#Fri Jul 05 13:00:10 CEST 2019
-base.0=/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8
-renamed.0=classes.dex
-file.0=/Users/Berthold/AndroidStudioProjects/0_MeineBrauchbarenProjekte/BeamCalc/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex
