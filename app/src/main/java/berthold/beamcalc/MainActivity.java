@@ -10,6 +10,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -45,7 +48,7 @@ import java.util.List;
 
 import org.berthold.beamCalc.*;
 
-public class MainActivity extends AppCompatActivity implements FragmentLoadInput.getDataFromFragment,  FragmentYesNoDialog.getDataFromFragment  {
+public class MainActivity extends AppCompatActivity implements FragmentLoadInput.getDataFromFragment, FragmentYesNoDialog.getDataFromFragment {
 
     // Debug
     private String tag;
@@ -79,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
     SharedPreferences sharedPreferences;
 
     // Perms
-    private static final int PERMISSION_REQUEST=200;
+    private static final int PERMISSION_REQUEST = 200;
 
     /**
      * On Create
@@ -98,8 +101,8 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         // Check for permissions.
         // The permissions to be checked have to be defined inside the manifest file.
         //
-        String[] perms = {"android.permission.READ_EXTERNAL_STORAGE","android.permission.WRITE_EXTERNAL_STORAGE"};
-        int permsRequestCode =PERMISSION_REQUEST;
+        String[] perms = {"android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE"};
+        int permsRequestCode = PERMISSION_REQUEST;
 
         // Opens a system dialog requesting permissions, if none of the
         // permissions asked for were granted already....
@@ -108,37 +111,40 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         //
         // Check if there is a newer version of this app available at the play store
         //
-        // todo Take care that this dialog is shown only once, after the app was started......
         //
-        if (showUpdateInfo()) {
-            Thread t = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        Thread.sleep(10000);
-                    } catch (Exception e) {
+        if (CheckForNetwork.isNetworkAvailable(getApplicationContext())) {
+            if (showUpdateInfo()) {
+                Thread t = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Thread.sleep(10000);
+                        } catch (Exception e) {
+                        }
+
+                        String currentVersion = GetThisAppsVersion.thisVersion(getApplicationContext());
+
+                        String latestVersionInGooglePlay;
+                        VersionChecker vc = new VersionChecker();
+
+                        try {
+                            latestVersionInGooglePlay = vc.execute().get();
+                        } catch (Exception e) {
+                            latestVersionInGooglePlay = "-";
+                        }
+
+                        if (!latestVersionInGooglePlay.equals(currentVersion)) {
+                            saveTimeUpdateInfoLastOpened();
+                            String dialogText = getResources().getString(R.string.dialog_new_version_available) + " " + latestVersionInGooglePlay;
+                            String ok = getResources().getString(R.string.do_update_confirm_button);
+                            String cancel = getResources().getString(R.string.no_udate_button);
+                            showConfirmDialog(CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE, FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG, dialogText.toString(), ok, cancel);
+                        }
                     }
-
-                    String currentVersion = GetThisAppsVersion.thisVersion(getApplicationContext());
-
-                    String latestVersionInGooglePlay;
-                    VersionChecker vc = new VersionChecker();
-
-                    try {
-                        latestVersionInGooglePlay = vc.execute().get();
-                    } catch (Exception e) {
-                        latestVersionInGooglePlay = "-";
-                    }
-
-                    if (!latestVersionInGooglePlay.equals(currentVersion)) {
-                        String dialogText = getResources().getString(R.string.dialog_new_version_available) + " " + latestVersionInGooglePlay;
-                        String ok = getResources().getString(R.string.do_update_confirm_button);
-                        String cancel = getResources().getString(R.string.no_udate_button);
-                        showConfirmDialog(CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE, FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG, dialogText.toString(), ok, cancel);
-                    }
-                }
-            });
-            t.start();
+                });
+                t.start();
+            } else
+                Log.v("NETWORKNETWORK_","No Net");
         }
     }
 
@@ -159,10 +165,8 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         //
         /*
         AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
-
         // Returns an intent object that you use to check for an update.
         Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
-
         appUpdateInfoTask.addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
             @Override
             public void onSuccess(AppUpdateInfo result) {
@@ -644,9 +648,9 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         //
         // Update this app?
         //
-        if(reqCode==CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE){
+        if (reqCode == CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE) {
             if (buttonPressed.equals(FragmentYesNoDialog.BUTTON_OK_PRESSED)) {
-                Intent Getintent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.berthold.convertjobscheduletocalendar&hl=de"));
+                Intent Getintent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=berthold.beamcalc"));
                 startActivity(Getintent);
             }
         }
@@ -767,6 +771,20 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Saves timestamp when update info was shown and
+     * a boolean set to true which tells us that the
+     * info has been shown at least once.
+     */
+    private void saveTimeUpdateInfoLastOpened() {
+        Long currentTime = System.currentTimeMillis();
+        sharedPreferences = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putLong("lastUpdateInfo", currentTime);
+        editor.putBoolean("hasBeenShownAtLastOnce", true);
+        editor.commit();
     }
 
     /**

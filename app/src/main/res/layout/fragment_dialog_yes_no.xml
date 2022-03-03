@@ -43,6 +43,7 @@
         android:minLines="3"
         android:paddingLeft="20sp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/screen_shot"
         app:layout_constraintTop_toTopOf="@+id/screen_shot" />
 

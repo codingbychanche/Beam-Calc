@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Handler;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.text.HtmlCompat;
 
@@ -21,12 +22,12 @@ import java.util.Locale;
 
 /**
  * Shows app info...
- *
  */
 public class InfoActivity extends AppCompatActivity {
 
     // Info
     private static String tag;
+    private String currentVersion = "-";
 
     // Filesystem
     private BufferedReader bufferedReader;
@@ -43,23 +44,21 @@ public class InfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_info);
 
         // UI
-        final Handler handler=new Handler();
-        webView=(WebView)findViewById(R.id.browser);
-        updateInfoView=findViewById(R.id.info_new_version_available);
-        progress=(ProgressBar)findViewById(R.id.html_load_progress);
+        final Handler handler = new Handler();
+        webView = (WebView) findViewById(R.id.browser);
+        updateInfoView = findViewById(R.id.info_new_version_available);
+        progress = (ProgressBar) findViewById(R.id.html_load_progress);
 
         // @rem:Get current locale (determine language from Androids settings@@
         //final Locale current=getResources().getConfiguration().locale;
-        final String  current=getResources().getConfiguration().locale.getLanguage();
-        Log.v("LOCALE","Country:"+current);
+        final String current = getResources().getConfiguration().locale.getLanguage();
+        Log.v("LOCALE", "Country:" + current);
 
         // @rem: Shows how to retrieve the version- name tag from the 'build.gradle'- file@@
-        String currentVersion="-";
-
         try {
             PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
             currentVersion = pInfo.versionName;
-            getSupportActionBar().setSubtitle("Version:"+currentVersion);
+            getSupportActionBar().setSubtitle("Version:" + currentVersion);
 
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
@@ -67,22 +66,41 @@ public class InfoActivity extends AppCompatActivity {
         }
         //@@
 
-        String latestVersionInGooglePlay=getAppVersionfromGooglePlay(getApplicationContext());
-
-        if (latestVersionInGooglePlay.equals(currentVersion)) {
-            //updateInfoView.setText(getResources().getText(R.string.version_info_is_latest_version));
-            updateInfoView.setText(HtmlCompat.fromHtml(getResources().getText(R.string.version_info_ok)+"",0));
-        } else
-            updateInfoView.setText(HtmlCompat.fromHtml(getResources().getText(R.string.version_info_update_available) + latestVersionInGooglePlay,0));
-
-        // Load html...
+        //
+        // If an active network is connected to this device, get current version of this apps
+        // published variant and check if the current version is installed.
+        //
         progress.setVisibility(View.VISIBLE);
 
-        Thread t=new Thread(new Runnable() {
+        Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
-                try{
-                    htmlSite=new StringBuilder();
+
+                //
+                // Active network available?
+                //
+                if (CheckForNetwork.isNetworkAvailable(getApplicationContext())) {
+                    final String latestVersionInGooglePlay = getAppVersionfromGooglePlay(getApplicationContext());
+
+                    if (latestVersionInGooglePlay.equals(currentVersion)) {
+                        //updateInfoView.setText(getResources().getText(R.string.version_info_is_latest_version));
+                        updateInfoView.setText(HtmlCompat.fromHtml(getResources().getText(R.string.version_info_ok) + "", 0));
+                    } else {
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                updateInfoView.setText(HtmlCompat.fromHtml(getResources().getText(R.string.version_info_update_available) + latestVersionInGooglePlay, 0));
+                            }
+                        });
+                    }
+                } else
+                    Log.v("NETWORKNETWORK_", "NO Net");
+
+                //
+                // Load HTML
+                //
+                try {
+                    htmlSite = new StringBuilder();
 
                     // @rem:Shows how to load data from androids 'assests'- folder@@
                     if (current.equals("de") || current.equals("en")) {
@@ -94,25 +112,26 @@ public class InfoActivity extends AppCompatActivity {
                         bufferedReader = new BufferedReader(new InputStreamReader(getAssets().open("beamCalcInfoFile-en.html")));
 
                     String line;
-                        while ((line = bufferedReader.readLine()) != null)
-                            htmlSite.append(line);
+                    while ((line = bufferedReader.readLine()) != null)
+                        htmlSite.append(line);
 
-                }catch (IOException io){
-                    Log.v("Info",io.toString());
+                } catch (IOException io) {
+                    Log.v("Info", io.toString());
                 }
 
                 // Wait a vew millisec's to enable the main UI thread
                 // to react.
                 try {
                     Thread.sleep(500);
-                } catch (InterruptedException e) {}
+                } catch (InterruptedException e) {
+                }
 
                 // Show
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
                         progress.setVisibility(View.GONE);
-                        webView.loadData(htmlSite.toString(),"text/html",null);
+                        webView.loadData(htmlSite.toString(), "text/html", null);
                     }
                 });
             }
@@ -126,15 +145,18 @@ public class InfoActivity extends AppCompatActivity {
      * @param c
      * @return A String containing the version tag.
      */
-    public String getAppVersionfromGooglePlay(Context c){
+    public String getAppVersionfromGooglePlay(Context c) {
         String latest;
-        VersionChecker vc=new VersionChecker();
+
+
+        VersionChecker vc = new VersionChecker();
 
         try {
             latest = vc.execute().get();
-        } catch (Exception e){
-            latest="-";
+        } catch (Exception e) {
+            latest = "-";
         }
         return latest;
+
     }
 }

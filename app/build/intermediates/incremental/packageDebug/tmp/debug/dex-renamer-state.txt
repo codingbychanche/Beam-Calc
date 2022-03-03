@@ -1,7 +1,7 @@
-#Sat Nov 13 18:18:58 CET 2021
-base.0=/media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+#Thu Mar 03 09:18:40 CET 2022
+base.0=/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/media/berthold/Bertholds Zeug/NFSShare/myCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.1=/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
