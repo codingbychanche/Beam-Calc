@@ -20,20 +20,20 @@
         "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/nopicture.png"
     },
     {
-        "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/release/drawable_openfolder.png.flat",
-        "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/openfolder.png"
-    },
-    {
         "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/release/layout_activity_save_beam_drawing.xml.flat",
         "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/layout/activity_save_beam_drawing.xml"
     },
     {
-        "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/release/layout-land_content_main.xml.flat",
-        "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/layout-land/content_main.xml"
+        "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/release/drawable_openfolder.png.flat",
+        "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/openfolder.png"
     },
     {
         "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/release/drawable_raster_off.png.flat",
         "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/raster_off.png"
+    },
+    {
+        "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/release/layout-land_content_main.xml.flat",
+        "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/layout-land/content_main.xml"
     },
     {
         "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/release/drawable_arrowup.png.flat",

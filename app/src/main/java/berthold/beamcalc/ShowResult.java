@@ -268,8 +268,9 @@ public class ShowResult {
         paint.setAlpha(255);
         paint.setColor(Color.BLACK);
 
+        //
         // Draw beam and supports.....
-
+        //
         // Draw left support
         double l = beam.getBearing(0).getDistanceFromLeftEndOfBeam_m();
         int x1 = (int) getXcoordinateFromBeamStartInPixels(l, beamLengthInPixels, beam.getLength());

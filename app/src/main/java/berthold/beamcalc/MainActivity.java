@@ -111,7 +111,6 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         //
         // Check if there is a newer version of this app available at the play store
         //
-        //
         if (CheckForNetwork.isNetworkAvailable(getApplicationContext())) {
             if (showUpdateInfo()) {
                 Thread t = new Thread(new Runnable() {

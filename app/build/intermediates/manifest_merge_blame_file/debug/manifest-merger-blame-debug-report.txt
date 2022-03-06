@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="berthold.beamcalc"
-4    android:versionCode="21"
-5    android:versionName="2.1" >
+4    android:versionCode="22"
+5    android:versionName="2.2" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
@@ -43,87 +43,86 @@
 26-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:15:9-41
 27        android:supportsRtl="true"
 27-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:16:9-35
-28        android:testOnly="true"
-29        android:theme="@style/AppTheme" >
-29-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:17:9-40
-30        <activity
-30-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:18:9-27:20
-31            android:name="berthold.beamcalc.MainActivity"
-31-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:19:13-41
-32            android:label="@string/app_name"
-32-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:20:13-45
-33            android:theme="@style/AppTheme.NoActionBar" >
-33-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:21:13-56
-34            <intent-filter>
-34-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:22:13-26:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:23:17-69
-35-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:23:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:25:17-77
-37-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:25:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity android:name="berthold.beamcalc.SaveBeamDrawing" />
-40-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:9-53
-40-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:19-50
-41        <activity android:name="berthold.filedialogtool.FileDialog" />
-41-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:9-71
-41-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:19-68
-42        <activity android:name="berthold.beamcalc.InfoActivity" />
-42-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:30:9-59
-42-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:30:19-47
-43        <!-- The activities will be merged into the manifest of the hosting app. -->
-44        <activity
-44-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:5-271
-45            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-45-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:15-102
-46            android:enabled="false"
-46-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:103-126
-47            android:exported="false"
-47-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:127-151
-48            android:launchMode="singleInstance"
-48-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:204-239
-49            android:process=":playcore_missing_splits_activity"
-49-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:152-203
-50            android:stateNotNeeded="true" />
-50-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:240-269
-51        <activity
-51-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:5-226
-52            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-52-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:15-95
-53            android:enabled="false"
-53-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:96-119
-54            android:exported="false"
-54-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:120-144
-55            android:stateNotNeeded="true"
-55-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:145-174
-56            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
-56-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:175-224
-57        <service
-57-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:16:5-18:15
-58            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-58-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:16:14-95
-59            android:enabled="false"
-59-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:16:96-119
-60            android:exported="true" >
-60-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:16:120-143
-61            <meta-data
-61-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:17:7-108
-62                android:name="com.google.android.play.core.assetpacks.versionCode"
-62-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:17:18-84
-63                android:value="11000" />
-63-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:17:85-106
-64        </service>
-65        <service
-65-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:19:5-147
-66            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
-66-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:19:14-96
-67            android:enabled="false"
-67-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:19:97-120
-68            android:exported="false" />
-68-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:19:121-145
-69    </application>
-70
-71</manifest>
+28        android:theme="@style/AppTheme" >
+28-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:17:9-40
+29        <activity
+29-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:18:9-27:20
+30            android:name="berthold.beamcalc.MainActivity"
+30-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:19:13-41
+31            android:label="@string/app_name"
+31-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:20:13-45
+32            android:theme="@style/AppTheme.NoActionBar" >
+32-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:21:13-56
+33            <intent-filter>
+33-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:22:13-26:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:23:17-69
+34-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:23:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:25:17-77
+36-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:25:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="berthold.beamcalc.SaveBeamDrawing" />
+39-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:9-53
+39-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:19-50
+40        <activity android:name="berthold.filedialogtool.FileDialog" />
+40-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:9-71
+40-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:19-68
+41        <activity android:name="berthold.beamcalc.InfoActivity" />
+41-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:30:9-59
+41-->/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:30:19-47
+42        <!-- The activities will be merged into the manifest of the hosting app. -->
+43        <activity
+43-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:5-271
+44            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+44-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:15-102
+45            android:enabled="false"
+45-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:103-126
+46            android:exported="false"
+46-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:127-151
+47            android:launchMode="singleInstance"
+47-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:204-239
+48            android:process=":playcore_missing_splits_activity"
+48-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:152-203
+49            android:stateNotNeeded="true" />
+49-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:12:240-269
+50        <activity
+50-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:5-226
+51            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+51-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:15-95
+52            android:enabled="false"
+52-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:96-119
+53            android:exported="false"
+53-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:120-144
+54            android:stateNotNeeded="true"
+54-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:145-174
+55            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+55-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:13:175-224
+56        <service
+56-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:16:5-18:15
+57            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+57-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:16:14-95
+58            android:enabled="false"
+58-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:16:96-119
+59            android:exported="true" >
+59-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:16:120-143
+60            <meta-data
+60-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:17:7-108
+61                android:name="com.google.android.play.core.assetpacks.versionCode"
+61-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:17:18-84
+62                android:value="11000" />
+62-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:17:85-106
+63        </service>
+64        <service
+64-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:19:5-147
+65            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+65-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:19:14-96
+66            android:enabled="false"
+66-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:19:97-120
+67            android:exported="false" />
+67-->[com.google.android.play:core:1.10.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/14df96dfefa355b8b60a9e29d8faf197/jetified-core-1.10.0/AndroidManifest.xml:19:121-145
+68    </application>
+69
+70</manifest>

@@ -96,6 +96,14 @@ public class InfoActivity extends AppCompatActivity {
                 } else
                     Log.v("NETWORKNETWORK_", "NO Net");
 
+
+            }
+        });
+        t.start();
+
+        Thread t2=new Thread(new Runnable() {
+            @Override
+            public void run() {
                 //
                 // Load HTML
                 //
@@ -136,7 +144,7 @@ public class InfoActivity extends AppCompatActivity {
                 });
             }
         });
-        t.start();
+        t2.start();
     }
 
     /**

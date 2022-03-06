@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
 MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /home/berthold/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.material:material:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] /home/berthold/.gradle/caches/transforms-2/files-2.1/9a993c6c225994ea69d3bb36157a0ce4/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
@@ -43,39 +43,43 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/berthold/.gradle/ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/40996d6039fa2fb22354b30f3d767665/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/a77c810a56173ccf6fb339f045a6aacd/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
 		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
 		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-32:12
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:1-33:12
 		INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:6:5-80
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:7:5-80
 MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /home/berthold/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:11:5-80
 MERGED from [com.github.codingbychanche:FileDialogTool:-SNAPSHOT] /home/berthold/.gradle/caches/transforms-2/files-2.1/efac6291f83d3d6189fe21168db458e1/jetified-FileDialogTool--SNAPSHOT/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:6:22-77
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:7:5-81
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:8:5-66
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:9:5-66
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:9:22-64
 application
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:11:5-30:19
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:12:5-31:19
 MERGED from [com.google.android.material:material:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/750e11957bf7041179375a87d64fa3cb/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/berthold/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -89,45 +93,45 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/berth
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/ec322e19e59be0ee44ce6650da9ba191/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:13:9-36
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:14:9-36
 	android:allowBackup
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:16:9-40
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:17:9-40
 activity#berthold.beamcalc.MainActivity
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:17:9-26:20
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:18:9-27:20
 	android:label
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:19:13-45
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:20:13-45
 	android:theme
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:20:13-56
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:21:13-56
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:18:13-41
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:25:27-74
 activity#berthold.beamcalc.SaveBeamDrawing
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:27:9-53
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:9-53
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:27:19-50
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:19-50
 activity#berthold.filedialogtool.FileDialog
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:9-71
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:9-71
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:28:19-68
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:19-68
 activity#berthold.beamcalc.InfoActivity
-ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:9-59
+ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:30:9-59
 	android:name
-		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:29:19-47
+		ADDED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml:30:19-47
 uses-sdk
 INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/AndroidManifest.xml
