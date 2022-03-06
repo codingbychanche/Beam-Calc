@@ -6,8 +6,8 @@ android {
         applicationId "berthold.beamcalc"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 22
-        versionName "2.2"
+        versionCode 23
+        versionName "2.3"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

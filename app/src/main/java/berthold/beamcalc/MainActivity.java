@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         // Check for permissions.
         // The permissions to be checked have to be defined inside the manifest file.
         //
-        String[] perms = {"android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE"};
+        String[] perms = {"android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE,","android.permission.ACCESS_NETWORK_STATE"};
         int permsRequestCode = PERMISSION_REQUEST;
 
         // Opens a system dialog requesting permissions, if none of the

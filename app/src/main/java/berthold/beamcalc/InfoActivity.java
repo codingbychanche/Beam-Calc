@@ -83,8 +83,13 @@ public class InfoActivity extends AppCompatActivity {
                     final String latestVersionInGooglePlay = getAppVersionfromGooglePlay(getApplicationContext());
 
                     if (latestVersionInGooglePlay.equals(currentVersion)) {
-                        //updateInfoView.setText(getResources().getText(R.string.version_info_is_latest_version));
-                        updateInfoView.setText(HtmlCompat.fromHtml(getResources().getText(R.string.version_info_ok) + "", 0));
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                //updateInfoView.setText(getResources().getText(R.string.version_info_is_latest_version));
+                                updateInfoView.setText(HtmlCompat.fromHtml(getResources().getText(R.string.version_info_ok) + "", 0));
+                            }
+                        });
                     } else {
                         handler.post(new Runnable() {
                             @Override
