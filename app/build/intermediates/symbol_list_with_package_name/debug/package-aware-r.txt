@@ -1253,7 +1253,9 @@ id labeled
 id largeLabel
 id lastmodified
 id left
+id left_support_layout
 id left_support_position
+id length_layout
 id line1
 id line3
 id listMode
@@ -1303,6 +1305,7 @@ id returnAndSave
 id right
 id right_icon
 id right_side
+id right_support_layout
 id right_support_position
 id save_drawing_as_bitmap
 id save_image_matrix
