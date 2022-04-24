@@ -343,7 +343,7 @@ public class ShowResult {
     }
 
     private void drawSingleLoads(Bitmap bitmap, Beam beam, BeamResult result, boolean displayResult, Resources resources){
-        
+
     }
 
     /**
