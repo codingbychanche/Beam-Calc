@@ -9,10 +9,21 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.Log;
 
+import org.berthold.beamCalc.Beam;
+import org.berthold.beamCalc.BeamCalcError;
+import org.berthold.beamCalc.BeamResult;
+import org.berthold.beamCalc.Load;
+import org.berthold.beamCalc.MSolver;
+import org.berthold.beamCalc.QSolver;
+import org.berthold.beamCalc.StressResultant;
+import org.berthold.beamCalc.StressResultantTable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import org.berthold.beamCalc.*;
+import gfxNonOverlapping.RectArea;
+import gfxNonOverlapping.Rectangles;
+
 
 /**
  * Show Result
@@ -153,6 +164,11 @@ public class ShowResult {
     private static Bitmap drawBeamAndResult(Bitmap bitmap, Beam beam, BeamResult result, boolean displayResult, Resources resources) {
         Canvas canvas = new Canvas(bitmap);
 
+        // This takes care that text drawn does not overlap.
+        // Each rectangular, bounding box added to this instance
+        // will be shifted if it overlaps any other object in it's list.
+        Rectangles rectangles=new Rectangles(CANVAS_SIZE_X,CANVAS_SIZE_Y);
+
         Paint paint = new Paint();
         paint.setAntiAlias(true);
         paint.setTextSize(TEXT_SIZE);
@@ -185,8 +201,9 @@ public class ShowResult {
             if (load.getLengthOfLineLoad_m() > 0) {
                 Double lengthOfLineLoadInPixels = convertLength_m_toLengthPixels(load.getLengthOfLineLoad_m(), beamLengthInPixels, beam.getLength());
 
-                // Draw rect with black border
+                // Draw transparent rect with black border
                 paint.setColor(Color.LTGRAY);
+                paint.setAlpha(100);
                 paint.setStyle(Paint.Style.FILL);
                 canvas.drawRect((float) (x0 + x), y0 + loadLengthInPixels, (float) (x0 + x + lengthOfLineLoadInPixels), y0, paint);
 
@@ -195,10 +212,20 @@ public class ShowResult {
                 canvas.drawRect((float) (x0 + x), y0 + loadLengthInPixels, (float) (x0 + x + lengthOfLineLoadInPixels), y0, paint);
 
                 paint.setStyle(Paint.Style.FILL);
-                String lengthOfLineLoad_m = "l=" + String.format(floatNumberFormatPreset, load.getLengthOfLineLoad_m()) + " m";
-                float textHeight = getTextHeightInPixels(lengthOfLineLoad_m, paint);
-                canvas.drawText(load.getName() + "=" + String.format(floatNumberFormatPreset, load.getForce_N()) + "N/m", (float) (x0 + x + ACTING_FORCE_TEXT_X_OFFSET), y0 + loadLengthInPixels + ACTING_FORCE_TEXT_Y_OFFSET, paint);
-                canvas.drawText(lengthOfLineLoad_m, (float) (x0 + x + ACTING_FORCE_TEXT_X_OFFSET), y0 + loadLengthInPixels + ACTING_FORCE_TEXT_Y_OFFSET + textHeight, paint);
+
+                String textLoadAndLenght = load.getName() + "=" + String.format(floatNumberFormatPreset, load.getForce_N()) + "N/m  l=" + String.format(floatNumberFormatPreset, load.getLengthOfLineLoad_m()) + " m";
+
+                float textHeight = getTextHeightInPixels(textLoadAndLenght, paint);
+                float textWidth=getTextWidthInpixels(textLoadAndLenght,paint);
+                float xPosOftext=(float)(x0 + x + ACTING_FORCE_TEXT_X_OFFSET);
+                float yPosOfText=   y0 + loadLengthInPixels + ACTING_FORCE_TEXT_Y_OFFSET + textHeight;
+
+                // This prevents overlapping with each other element added to the list of rectangular areas.
+                // tOdo: Add this behaviour to support names and other elements...
+                RectArea a=new RectArea((int)xPosOftext,(int)yPosOfText,(int)textWidth,(int)textHeight);
+                a=rectangles.add(a);
+
+                canvas.drawText(textLoadAndLenght, a.getX(), a.getY(), paint);
             }
         }
 
@@ -228,11 +255,20 @@ public class ShowResult {
 
                 // This prevents from load description written over the right border of the canvas
                 x = getSaveXpos(loadDescription, x, x0, paint);
-                canvas.drawText(loadDescription, (float) (x0 + x + ACTING_FORCE_TEXT_X_OFFSET), y0 + ACTING_FORCE_TEXT_Y_OFFSET + loadLengthInPixels, paint);
+
+                float textHeight = getTextHeightInPixels(loadDescription, paint);
+                float textWidth=getTextWidthInpixels(loadDescription,paint);
+                float xPosOftext=(float)(x0 + x + ACTING_FORCE_TEXT_X_OFFSET);
+                float yPosOfText=   y0 + loadLengthInPixels + ACTING_FORCE_TEXT_Y_OFFSET ;
+
+                RectArea a=new RectArea((int)xPosOftext,(int)yPosOfText,(int)textWidth,(int)textHeight);
+                a=rectangles.add(a);
+
+                canvas.drawText(loadDescription, a.getX(), a.getY(), paint);
             }
         }
 
-        // Marks maxima and minima of bending moments
+        // Marks maximal and minimal of bending moments
         if(displayResult) {
             StressResultantTable qTable = QSolver.solve(beam, "N");
             StressResultantTable mTable = MSolver.solve(qTable, beam, "Nm");
@@ -304,6 +340,10 @@ public class ShowResult {
 
         // Return drawing of beam with loads, supports and the resulting forces....
         return bitmap;
+    }
+
+    private void drawSingleLoads(Bitmap bitmap, Beam beam, BeamResult result, boolean displayResult, Resources resources){
+        
     }
 
     /**
