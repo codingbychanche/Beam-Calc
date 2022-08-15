@@ -132,12 +132,14 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                             latestVersionInGooglePlay = "-";
                         }
 
-                        if (!latestVersionInGooglePlay.equals(currentVersion)) {
-                            saveTimeUpdateInfoLastOpened();
-                            String dialogText = getResources().getString(R.string.dialog_new_version_available) + " " + latestVersionInGooglePlay;
-                            String ok = getResources().getString(R.string.do_update_confirm_button);
-                            String cancel = getResources().getString(R.string.no_udate_button);
-                            showConfirmDialog(CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE, FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG, dialogText.toString(), ok, cancel);
+                        if (latestVersionInGooglePlay!=null) {
+                            if (!latestVersionInGooglePlay.equals(currentVersion)) {
+                                saveTimeUpdateInfoLastOpened();
+                                String dialogText = getResources().getString(R.string.dialog_new_version_available) + " " + latestVersionInGooglePlay;
+                                String ok = getResources().getString(R.string.do_update_confirm_button);
+                                String cancel = getResources().getString(R.string.no_udate_button);
+                                showConfirmDialog(CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE, FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG, dialogText.toString(), ok, cancel);
+                            }
                         }
                     }
                 });

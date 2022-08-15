@@ -1571,7 +1571,9 @@ string load_position_text
 string manu_save_drawing_as_bitmap
 string menu_app_info
 string mtrl_chip_close_icon_content_description
+string no_network
 string no_udate_button
+string no_version_info_available
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

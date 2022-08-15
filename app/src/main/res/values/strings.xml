@@ -73,6 +73,18 @@
         ]]>
     </string>
 
+    <string name="no_network">
+     <![CDATA[
+        Kein Netzwerk, keine Versions- Info abrufbar.
+        ]]>
+    </string>
+
+    <string name="no_version_info_available">
+     <![CDATA[
+        Die aktuelle Version im Play Store konnte nicht ermittelt werden.
+        ]]>
+    </string>
+
 
     <string name="dialog_new_version_available">
         <![CDATA[<p><b>Neue Version verfügbar</b></p>
