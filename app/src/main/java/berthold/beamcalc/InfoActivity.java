@@ -79,12 +79,12 @@ public class InfoActivity extends AppCompatActivity {
                 //
                 // Active network available?
                 //
-
+                //
                 // The following statement is true, when network is available, no ,matter if it is switched on or off!!!
                 // This statement is noo good if one wants to check if a network connection is possible....
                 if (CheckForNetwork.isNetworkAvailable(getApplicationContext())) {
                     final String latestVersionInGooglePlay = getAppVersionfromGooglePlay(getApplicationContext());
-                    if (latestVersionInGooglePlay != null) {
+                    if (latestVersionInGooglePlay != "-") {
                         if (latestVersionInGooglePlay.equals(currentVersion)) {
                             handler.post(new Runnable() {
                                 @Override
@@ -103,8 +103,9 @@ public class InfoActivity extends AppCompatActivity {
                                 }
                             });
                         }
+
                     } else
-                        // Could not retrieve version info from google plays store listing of this app.
+                        // Network was available but, could not retrieve version info from google plays store listing of this app.
                         handler.post(new Runnable() {
                             @Override
                             public void run() {
@@ -173,20 +174,19 @@ public class InfoActivity extends AppCompatActivity {
      * Returns the version from the app's Google Play store listing...
      *
      * @param c
-     * @return A String containing the version tag.
+     * @return A String containing the version tag or, if errors: - char.
      */
     public String getAppVersionfromGooglePlay(Context c) {
         String latest;
-
 
         VersionChecker vc = new VersionChecker();
 
         try {
             latest = vc.execute().get();
         } catch (Exception e) {
-            latest = "-";
+           Log.v(tag,e.toString());
+           latest="-";
         }
         return latest;
-
     }
 }

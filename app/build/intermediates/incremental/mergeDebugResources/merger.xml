@@ -3760,7 +3760,7 @@
         Neue Version:]]>
     </string><string name="do_update_confirm_button">Update</string><string name="no_udate_button">Nein,danke</string><string name="no_network">
      <![CDATA[
-        Kein Netzwerk, keine Versions- Info abrufbar.
+        Kein Netzwerk, die aktuelle Version der App im Play Store, kann nicht ermittelt werden.
         ]]>
     </string><string name="no_version_info_available">
      <![CDATA[

@@ -1,6 +1,8 @@
 package berthold.beamcalc;
 
 import android.os.AsyncTask;
+import android.util.Log;
+
 import org.jsoup.Jsoup;
 import java.io.IOException;
 
@@ -27,8 +29,9 @@ public class VersionChecker extends AsyncTask<String, String, String> {
                     .select("div.hAyfc:nth-child(4) > span:nth-child(2) > div:nth-child(1) > span:nth-child(1)")
                     .first()
                     .ownText();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+           Log.v("VERSION_CHECKER:",e.toString());
+           newVersion="-";
         }
         return newVersion;
     }

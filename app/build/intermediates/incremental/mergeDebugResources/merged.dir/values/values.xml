@@ -673,7 +673,7 @@
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="no_network">
      <![CDATA[
-        Kein Netzwerk, keine Versions- Info abrufbar.
+        Kein Netzwerk, die aktuelle Version der App im Play Store, kann nicht ermittelt werden.
         ]]>
     </string>
     <string name="no_udate_button">Nein,danke</string>

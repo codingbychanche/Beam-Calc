@@ -132,7 +132,9 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                             latestVersionInGooglePlay = "-";
                         }
 
-                        if (latestVersionInGooglePlay!=null) {
+                        // Only open when connection to Play Store was successful and
+                        // the latest version Info could be retrieved.....
+                        if (latestVersionInGooglePlay!="-") {
                             if (!latestVersionInGooglePlay.equals(currentVersion)) {
                                 saveTimeUpdateInfoLastOpened();
                                 String dialogText = getResources().getString(R.string.dialog_new_version_available) + " " + latestVersionInGooglePlay;
@@ -141,10 +143,12 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                                 showConfirmDialog(CONFIRM_DIALOG_CALLS_BACK_FOR_UPDATE, FragmentYesNoDialog.SHOW_AS_YES_NO_DIALOG, dialogText.toString(), ok, cancel);
                             }
                         }
+
                     }
                 });
                 t.start();
             } else
+                // If there is no connection to an active network, do not show anything.....
                 Log.v("NETWORKNETWORK_","No Net");
         }
     }
