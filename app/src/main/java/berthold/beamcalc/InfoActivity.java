@@ -84,6 +84,7 @@ public class InfoActivity extends AppCompatActivity {
                 // This statement is noo good if one wants to check if a network connection is possible....
                 if (CheckForNetwork.isNetworkAvailable(getApplicationContext())) {
                     final String latestVersionInGooglePlay = getAppVersionfromGooglePlay(getApplicationContext());
+
                     if (latestVersionInGooglePlay != "-") {
                         if (latestVersionInGooglePlay.equals(currentVersion)) {
                             handler.post(new Runnable() {

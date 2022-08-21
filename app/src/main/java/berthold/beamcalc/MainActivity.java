@@ -164,12 +164,11 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         super.onStart();
 
         Log.v("UPDATEUPDATE:", "CHECKING..");
-
+/*
         //
         // Play core library
         //
-        /*
-        AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
+        final AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
         // Returns an intent object that you use to check for an update.
         Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
         appUpdateInfoTask.addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
@@ -178,11 +177,15 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                 if (result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE) {
                     Toast.makeText(getApplicationContext(), "Update available.....", Toast.LENGTH_LONG).show();
                     Log.v("UPDATEUPDATE:", result.availableVersionCode() + "");
-                } else
-                    Log.v("UPDATEUPDATE:", "No Update");
+                } else{
+                    Log.v("UPDATEUPDATE_1:", "No Update");
+                    Log.v("UPDATEUPDATE_2:", result.availableVersionCode()+"v");
+                }
             }
         });
-        */
+
+ */
+
     }
 
     /**

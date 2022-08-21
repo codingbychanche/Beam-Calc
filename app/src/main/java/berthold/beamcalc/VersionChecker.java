@@ -1,6 +1,7 @@
 package berthold.beamcalc;
 
 import android.os.AsyncTask;
+import android.os.StrictMode;
 import android.util.Log;
 
 import org.jsoup.Jsoup;

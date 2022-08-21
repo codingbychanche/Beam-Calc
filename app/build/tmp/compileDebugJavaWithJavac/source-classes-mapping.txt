@@ -1,5 +1,8 @@
-berthold/beamcalc/VersionChecker.java
- berthold.beamcalc.VersionChecker
+berthold/beamcalc/FragmentLoadInput.java
+ berthold.beamcalc.FragmentLoadInput
+ berthold.beamcalc.FragmentLoadInput$1
+ berthold.beamcalc.FragmentLoadInput$2
+ berthold.beamcalc.FragmentLoadInput$getDataFromFragment
 berthold/beamcalc/ConvertLoadListObject.java
  berthold.beamcalc.ConvertLoadListObject
 berthold/beamcalc/CheckForNetwork.java
@@ -17,11 +20,6 @@ berthold/beamcalc/ShowResult.java
  berthold.beamcalc.ShowResult
 berthold/beamcalc/BuildConfig.java
  berthold.beamcalc.BuildConfig
-berthold/beamcalc/FragmentLoadInput.java
- berthold.beamcalc.FragmentLoadInput
- berthold.beamcalc.FragmentLoadInput$1
- berthold.beamcalc.FragmentLoadInput$2
- berthold.beamcalc.FragmentLoadInput$getDataFromFragment
 berthold/beamcalc/BeamLoadListAdapter.java
  berthold.beamcalc.BeamLoadListAdapter
  berthold.beamcalc.BeamLoadListAdapter$1
@@ -40,6 +38,8 @@ berthold/beamcalc/MainActivity.java
  berthold.beamcalc.MainActivity$5
  berthold.beamcalc.MainActivity$6
  berthold.beamcalc.MainActivity$7
+berthold/beamcalc/VersionChecker.java
+ berthold.beamcalc.VersionChecker
 berthold/beamcalc/InfoActivity.java
  berthold.beamcalc.InfoActivity
  berthold.beamcalc.InfoActivity$1
