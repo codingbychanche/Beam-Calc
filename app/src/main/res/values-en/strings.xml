@@ -34,7 +34,7 @@
     <string name="error_message">Error, please check input</string>
     <string name="leave_warning">When you press the devices \'Back Button\' a second time the App will be closed (All data entered will be restored when starting the next session).</string>
     <string name="manu_save_drawing_as_bitmap">Save drawing.</string>
-    <string name="menu_app_info">About....</string>
+    <string name="menu_app_info">Data safety+Privacy policy/ About</string>
     <string name="save_drawing_as_bitmap">Save in ‘*.png\' file- format</string>
     <string name="state_saved">Input saved.</string>
     <string name="beam_load_force_hint">[N] or [N/m]</string>

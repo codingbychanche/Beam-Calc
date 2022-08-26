@@ -424,21 +424,71 @@ library {
 library {
   maven_library {
     groupId: "com.google.android.play"
-    artifactId: "core"
-    version: "1.10.0"
+    artifactId: "app-update"
+    version: "2.0.0"
   }
   digests {
-    sha256: "z\201\216\222M\325%\325\325\325\334\264]\016\'\351O\214?\3661\345\345\366\260%F\331\\\246\260R"
+    sha256: "\216\3371\270@\345\374\340!\031\243y\343\022\275R\r\375\216\364c6\004\030K\024\313\360\344\351jp"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-basement"
+    version: "16.0.1"
+  }
+  digests {
+    sha256: "\340\213\375\036\207\304\345\016\367aa\327\254v\270s\256\271u6~\353:\372J\276b\352\030\207\307\306"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-tasks"
+    version: "16.0.1"
+  }
+  digests {
+    sha256: "\263\034\030\330\321\314\215\230\024\362\225\356t5G\0233\363p\272[\331\004\312\024\370\362\276\304\363\\5"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.play"
+    artifactId: "core-common"
+    version: "2.0.0"
+  }
+  digests {
+    sha256: "\214\321\371+\201)6\307\221M\310\vC\362\203\372j\340\273e\221\275\325\264\247&\215I\253\273\212\204"
+  }
+}
+library {
+  maven_library {
+    groupId: "androidx.legacy"
+    artifactId: "legacy-support-v4"
+    version: "1.0.0"
+  }
+  digests {
+    sha256: "x\376\301H_\0178\212GI\002-\325\024\026\205q\'\315%D\256\034?\320\261e\211\005T\200\260"
+  }
+}
+library {
+  maven_library {
+    groupId: "androidx.media"
+    artifactId: "media"
+    version: "1.0.0"
+  }
+  digests {
+    sha256: "\262;R{+\254\207\fJtQ\346\230-q2\344\023\350\215\177\'\333\353\037\307d\nr\f\331\356"
   }
 }
 library {
   maven_library {
     groupId: "org.jsoup"
     artifactId: "jsoup"
-    version: "1.13.1"
+    version: "1.11.1"
   }
   digests {
-    sha256: "\342\271\234\r/\243\237i\362~\373\034\000\0269\a\023\376\262\362\340-\216\247\361\303kx\002qY\212"
+    sha256: "U>\200\364\343\017\000\367\374\341\227\v\ba\006KJ\367\021\245\001H=\206\033\204\271He\304f\275"
   }
 }
 library {
@@ -454,6 +504,11 @@ library {
 library {
   digests {
     sha256: "\370\251\267Z\216d\254\200\t\213\230\362\343RG1kU\004\302\206>\024\256O\352\336\212\344\030\356\327"
+  }
+}
+library {
+  digests {
+    sha256: "\321\v]\224\355\214~=_\fWk4\375{\275\022\357\355\217g=!\324~\r\"\320&@Z?"
   }
 }
 library_dependencies {
@@ -706,21 +761,58 @@ library_dependencies {
   library_dep_index: 41
 }
 library_dependencies {
+  library_index: 42
+  library_dep_index: 43
+  library_dep_index: 44
+  library_dep_index: 45
+}
+library_dependencies {
+  library_index: 43
+  library_dep_index: 46
+}
+library_dependencies {
+  library_index: 46
+  library_dep_index: 2
+  library_dep_index: 47
+  library_dep_index: 29
+  library_dep_index: 28
+  library_dep_index: 5
+}
+library_dependencies {
+  library_index: 47
+  library_dep_index: 1
+  library_dep_index: 2
+  library_dep_index: 12
+}
+library_dependencies {
   library_index: 44
+  library_dep_index: 43
+}
+library_dependencies {
+  library_index: 45
+  library_dep_index: 43
+  library_dep_index: 44
+}
+library_dependencies {
+  library_index: 49
   library_dep_index: 0
   library_dep_index: 27
   library_dep_index: 40
 }
 library_dependencies {
-  library_index: 45
+  library_index: 50
+}
+library_dependencies {
+  library_index: 51
 }
 module_dependencies {
   module_name: "base"
   dependency_index: 0
+  dependency_index: 48
+  dependency_index: 49
+  dependency_index: 50
+  dependency_index: 51
   dependency_index: 40
   dependency_index: 42
   dependency_index: 27
-  dependency_index: 43
-  dependency_index: 44
-  dependency_index: 45
 }

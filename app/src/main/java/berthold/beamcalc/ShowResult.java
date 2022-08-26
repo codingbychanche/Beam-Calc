@@ -263,7 +263,6 @@ public class ShowResult {
 
                 RectArea a=new RectArea((int)xPosOftext,(int)yPosOfText,(int)textWidth,(int)textHeight);
                 a=rectangles.add(a);
-
                 canvas.drawText(loadDescription, a.getX(), a.getY(), paint);
             }
         }
@@ -288,7 +287,9 @@ public class ShowResult {
                 canvas.drawCircle((float) (x0 + x), y0, 10, paint);
 
                 String bendingMoment =String.format(floatNumberFormatPreset,r.getShearingForce()) + " " + r.getUnit();
+
                 String pos="x="+String.format(floatNumberFormatPreset,r.getX_m())+" m";
+
                 x = getSaveXpos(bendingMoment, x, x0, paint);
                 paint.setAlpha(255);
                 paint.setColor(Color.BLACK);

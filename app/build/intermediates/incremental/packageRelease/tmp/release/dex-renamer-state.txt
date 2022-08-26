@@ -1,4 +1,4 @@
-#Mon Mar 07 22:35:16 CET 2022
+#Mon Aug 22 11:31:15 CEST 2022
 base.0=/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

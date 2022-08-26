@@ -10,43 +10,46 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.net.ConnectivityManager;
-import android.net.Network;
-import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.play.core.appupdate.AppUpdateInfo;
 import com.google.android.play.core.appupdate.AppUpdateManager;
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
+import com.google.android.play.core.appupdate.testing.FakeAppUpdateManager;
 import com.google.android.play.core.install.model.AppUpdateType;
 import com.google.android.play.core.install.model.UpdateAvailability;
-import com.google.android.play.core.tasks.OnSuccessListener;
-import com.google.android.play.core.tasks.Task;
+
+
+import org.berthold.beamCalc.Beam;
+import org.berthold.beamCalc.BeamCalcError;
+import org.berthold.beamCalc.BeamResult;
+import org.berthold.beamCalc.BeamSolver;
+import org.berthold.beamCalc.Load;
+import org.berthold.beamCalc.Support;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.berthold.beamCalc.*;
 
 public class MainActivity extends AppCompatActivity implements FragmentLoadInput.getDataFromFragment, FragmentYesNoDialog.getDataFromFragment {
 
@@ -101,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         // Check for permissions.
         // The permissions to be checked have to be defined inside the manifest file.
         //
-        String[] perms = {"android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE,","android.permission.ACCESS_NETWORK_STATE"};
+        String[] perms = {"android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE,", "android.permission.ACCESS_NETWORK_STATE"};
         int permsRequestCode = PERMISSION_REQUEST;
 
         // Opens a system dialog requesting permissions, if none of the
@@ -134,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
 
                         // Only open when connection to Play Store was successful and
                         // the latest version Info could be retrieved.....
-                        if (latestVersionInGooglePlay!="-") {
+                        if (latestVersionInGooglePlay != "-") {
                             if (!latestVersionInGooglePlay.equals(currentVersion)) {
                                 saveTimeUpdateInfoLastOpened();
                                 String dialogText = getResources().getString(R.string.dialog_new_version_available) + " " + latestVersionInGooglePlay;
@@ -149,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                 t.start();
             } else
                 // If there is no connection to an active network, do not show anything.....
-                Log.v("NETWORKNETWORK_","No Net");
+                Log.v("NETWORKNETWORK_", "No Net");
         }
     }
 
@@ -162,12 +165,26 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
     @Override
     public void onStart() {
         super.onStart();
+        /*
+        // @@rem:An example on how to use the fake update manager to test in app updates without the need of the actual Play Store@@
+        FakeAppUpdateManager fakeAppUpdateManager = new FakeAppUpdateManager(this);
+        fakeAppUpdateManager.setUpdateAvailable(1); // add app version code greater than current version.
+        //fakeAppUpdateManager.setUpdateNotAvailable(); // If no update is available....
+        fakeAppUpdateManager.getAppUpdateInfo().addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
+            @Override
+            public void onSuccess(AppUpdateInfo appUpdateInfo) {
+                if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                        && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE)) {
+                   Toast.makeText(getApplicationContext(), "Update available....."+appUpdateInfo.availableVersionCode()+" ", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+        //@@
 
-        Log.v("UPDATEUPDATE:", "CHECKING..");
-/*
         //
         // Play core library
         //
+/*
         final AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
         // Returns an intent object that you use to check for an update.
         Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
@@ -177,15 +194,14 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
                 if (result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE) {
                     Toast.makeText(getApplicationContext(), "Update available.....", Toast.LENGTH_LONG).show();
                     Log.v("UPDATEUPDATE:", result.availableVersionCode() + "");
-                } else{
+                } else {
+                    Toast.makeText(getApplicationContext(), "No Update available.....", Toast.LENGTH_LONG).show();
                     Log.v("UPDATEUPDATE_1:", "No Update");
-                    Log.v("UPDATEUPDATE_2:", result.availableVersionCode()+"v");
+                    Log.v("UPDATEUPDATE_2:", result.availableVersionCode() + "v");
                 }
             }
         });
-
- */
-
+        */
     }
 
     /**

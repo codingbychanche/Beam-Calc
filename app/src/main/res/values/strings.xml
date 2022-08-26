@@ -5,7 +5,7 @@
 
     <!-- Options menu -->
     <string name="manu_save_drawing_as_bitmap">Zeichnung speichern.</string>
-    <string name="menu_app_info">Info....</string>
+    <string name="menu_app_info">Datenschutz/ Info</string>
 
     <!-- Beam descritpion -->
     <string name="beam_definition_title_bar">Träger:</string>
