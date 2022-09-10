@@ -67,76 +67,82 @@
         app:layout_constraintTop_toTopOf="parent"></Button>
 
 
-    <TextView
-        android:id="@+id/load_magnitute_text"
-        style="@style/DialogBoxTextBody"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/load_magnitute_text"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-    <EditText
-        android:id="@+id/load_magnitute"
-        style="@style/DialogBoxTextBody"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/load_magnitute"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="50"
+            android:focusable="true"
+            android:hint="@string/load_magnitute_hint"
+            android:inputType="numberSigned|numberDecimal"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_1">
 
-        android:hint="@string/load_magnitute_hint"
-        android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/load_magnitute_text"
-        app:layout_constraintStart_toStartOf="@+id/load_position"
-        app:layout_constraintTop_toTopOf="@+id/load_magnitute_text"></EditText>
+        <EditText
+            android:id="@+id/load_position"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="50"
+            android:focusable="true"
+            android:hint="@string/load_length_hint"
+            android:inputType="numberSigned|numberDecimal"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/load_position"
-        style="@style/DialogBoxTextBody"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="@string/load_length_hint"
-        android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/load_length_text"
-        app:layout_constraintStart_toEndOf="@+id/load_position_text"
-        app:layout_constraintTop_toTopOf="@+id/load_length_text"></EditText>
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_2">
 
-    <TextView
+        <EditText
+            android:id="@+id/load_length"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="50"
+            android:focusable="true"
+            android:hint="@string/load_position_hint"
+            android:inputType="numberSigned|numberDecimal"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        android:id="@+id/load_length_text"
-        style="@style/DialogBoxTextBody"
-        android:text="@string/load_length_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-
-        app:layout_constraintStart_toStartOf="@+id/load_magnitute_text"
-        app:layout_constraintTop_toBottomOf="@+id/load_magnitute"></TextView>
-
-
-    <TextView
-        android:id="@+id/load_position_text"
-        style="@style/DialogBoxTextBody"
-        android:text="@string/load_position_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-
-        app:layout_constraintStart_toStartOf="@+id/load_length_text"
-        app:layout_constraintTop_toBottomOf="@+id/load_position"></TextView>
-
-    <EditText
-        android:id="@+id/load_length"
-        style="@style/DialogBoxTextBody"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/beam_load_position_from_left_hint"
-        android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/load_position_text"
-        app:layout_constraintStart_toEndOf="@+id/load_position_text"
-        app:layout_constraintTop_toTopOf="@+id/load_position_text"></EditText>
-
-
-
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

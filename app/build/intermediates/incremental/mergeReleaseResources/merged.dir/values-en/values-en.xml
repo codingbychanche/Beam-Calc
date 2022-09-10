@@ -46,7 +46,7 @@
     <string name="load_position_hint">From left support [m]</string>
     <string name="load_position_text">x0=</string>
     <string name="manu_save_drawing_as_bitmap">Save drawing.</string>
-    <string name="menu_app_info">About....</string>
+    <string name="menu_app_info">Data safety+Privacy policy/ About</string>
     <string name="no_network">
      <![CDATA[
         No network, could not check app- version.

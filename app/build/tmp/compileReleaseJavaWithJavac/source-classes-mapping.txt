@@ -33,7 +33,6 @@ berthold/beamcalc/MainActivity.java
  berthold.beamcalc.MainActivity$5
  berthold.beamcalc.MainActivity$6
  berthold.beamcalc.MainActivity$7
- berthold.beamcalc.MainActivity$8
 berthold/beamcalc/FragmentLoadInput.java
  berthold.beamcalc.FragmentLoadInput
  berthold.beamcalc.FragmentLoadInput$1

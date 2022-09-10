@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/74568ed4bd98a6eb6149e7fba0022629/jetified-play-services-basement-16.0.1/res/values-ur/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "210",
+                        "endOffsets": "457"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "2832",
+                        "endColumns": "210",
+                        "endOffsets": "3038"
+                    }
+                },
+                {
                     "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/ec322e19e59be0ee44ce6650da9ba191/core-1.5.0/res/values-ur/values-ur.xml",
                     "from": {
                         "startLines": "2",
@@ -35,23 +52,6 @@
                         "startOffsets": "3129",
                         "endColumns": "100",
                         "endOffsets": "3225"
-                    }
-                },
-                {
-                    "source": "/home/berthold/.gradle/caches/transforms-2/files-2.1/57be4be10be84221932c5dd1049c705d/jetified-play-services-basement-16.0.1/res/values-ur/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "210",
-                        "endOffsets": "457"
-                    },
-                    "to": {
-                        "startLines": "29",
-                        "startColumns": "4",
-                        "startOffsets": "2832",
-                        "endColumns": "210",
-                        "endOffsets": "3038"
                     }
                 }
             ]

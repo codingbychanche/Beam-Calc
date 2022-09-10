@@ -1254,6 +1254,9 @@ id imageView
 id include_this_load_in_calculation
 id info
 id info_new_version_available
+id input_1
+id input_2
+id input_3
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1269,11 +1272,8 @@ id line3
 id listMode
 id list_item
 id load_length
-id load_length_text
 id load_magnitute
-id load_magnitute_text
 id load_position
-id load_position_text
 id load_row_with_errors
 id locksymbol
 id masked

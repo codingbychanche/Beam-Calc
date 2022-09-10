@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="berthold.beamcalc"
-4    android:versionCode="27"
-5    android:versionName="2.7" >
+4    android:versionCode="28"
+5    android:versionName="2.8" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
@@ -83,11 +83,11 @@
 46-->[com.google.android.play:core-common:2.0.0] /home/berthold/.gradle/caches/transforms-2/files-2.1/19281181119337b623c8dd990a26bf52/jetified-core-common-2.0.0/AndroidManifest.xml:18:13-62
 47
 48        <meta-data
-48-->[com.google.android.gms:play-services-basement:16.0.1] /home/berthold/.gradle/caches/transforms-2/files-2.1/57be4be10be84221932c5dd1049c705d/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+48-->[com.google.android.gms:play-services-basement:16.0.1] /home/berthold/.gradle/caches/transforms-2/files-2.1/74568ed4bd98a6eb6149e7fba0022629/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
 49            android:name="com.google.android.gms.version"
-49-->[com.google.android.gms:play-services-basement:16.0.1] /home/berthold/.gradle/caches/transforms-2/files-2.1/57be4be10be84221932c5dd1049c705d/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+49-->[com.google.android.gms:play-services-basement:16.0.1] /home/berthold/.gradle/caches/transforms-2/files-2.1/74568ed4bd98a6eb6149e7fba0022629/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
 50            android:value="@integer/google_play_services_version" />
-50-->[com.google.android.gms:play-services-basement:16.0.1] /home/berthold/.gradle/caches/transforms-2/files-2.1/57be4be10be84221932c5dd1049c705d/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+50-->[com.google.android.gms:play-services-basement:16.0.1] /home/berthold/.gradle/caches/transforms-2/files-2.1/74568ed4bd98a6eb6149e7fba0022629/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
 51    </application>
 52
 53</manifest>

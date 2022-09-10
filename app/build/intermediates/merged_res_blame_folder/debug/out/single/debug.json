@@ -4,12 +4,12 @@
         "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/calculator.png"
     },
     {
-        "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/debug/layout-land_content_main.xml.flat",
-        "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/layout-land/content_main.xml"
-    },
-    {
         "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/debug/drawable_add_load_icon.png.flat",
         "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/add_load_icon.png"
+    },
+    {
+        "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/debug/layout-land_content_main.xml.flat",
+        "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/layout-land/content_main.xml"
     },
     {
         "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat",
@@ -40,12 +40,12 @@
         "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/arrowup.png"
     },
     {
-        "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/debug/drawable_show_result_on.png.flat",
-        "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/show_result_on.png"
-    },
-    {
         "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/debug/drawable_show_result_off.png.flat",
         "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/show_result_off.png"
+    },
+    {
+        "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/debug/drawable_show_result_on.png.flat",
+        "source": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/src/main/res/drawable/show_result_on.png"
     },
     {
         "merged": "/media/berthold/Bertholds Zeug/NFSShare/MyCode/AndroidStudioProjects/MyApps/Beam-Calc/app/build/intermediates/res/merged/debug/drawable_openfolder.png.flat",

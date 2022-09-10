@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLoadInput
         //
         // Play core library
         //
-/*
+        /*
         final AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
         // Returns an intent object that you use to check for an update.
         Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
